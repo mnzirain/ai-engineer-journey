@@ -1,44 +1,47 @@
-# Week 1 – AI Text Summarizer
+# 🤖 AI Text Summarizer
 
 ## Overview
 
-This project is part of my AI Engineer Journey.
+This project is an AI-powered text summarizer built using the Hugging Face Transformers library and PyTorch.
 
-The goal is to build an AI-powered text summarization application using Python and Hugging Face Transformers.
-
-## Objectives
-
-- Learn Python project structure
-- Work with virtual environments
-- Use Hugging Face Transformers
-- Build an AI text summarizer
-- Practice Git and GitHub workflows
+It accepts a long paragraph of text and generates a concise summary using a pretrained transformer model.
 
 ## Technologies
 
-- Python
+- Python 3.13
 - Hugging Face Transformers
 - PyTorch
 - SentencePiece
 
-## Project Status
+## Features
 
-🚧 In Progress
+- Summarizes long text
+- Uses pretrained DistilBART model
+- Command-line interface
+- Easy to extend into an API
 
-## Repository Structure
+## Installation
 
+```bash
+pip install -r requirements.txt
 ```
-week1-ai-summarizer/
-├── app.py
-├── summarizer.py
-├── requirements.txt
-└── README.md
+
+## Run
+
+```bash
+python app.py
 ```
 
-## Next Steps
+## Example
 
-- Build the summarizer
-- Test with sample text
-- Improve the interface
-- Convert into a FastAPI application
-- Deploy publicly
+Input:
+
+Artificial Intelligence is transforming industries...
+
+Output:
+
+AI is transforming industries by improving efficiency and customer experiences while emphasizing responsible development.
+
+## Author
+
+Mike Nzirainengwe

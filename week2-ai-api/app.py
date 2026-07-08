@@ -1,5 +1,5 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel, Field
 from summarizer import summarize_text
 
 app = FastAPI(
@@ -9,7 +9,12 @@ app = FastAPI(
 )
 
 class TextRequest(BaseModel):
-    text: str
+    text: str = Field(
+        ...,
+        min_length=50,
+        max_length=5000,
+        description="Text to summarize"
+    )
 
 @app.get("/")
 def home():
@@ -17,10 +22,25 @@ def home():
         "message": "Welcome to Mike's AI Summarizer API!"
     }
 
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy",
+        "service": "AI Summarizer API",
+        "version": "1.0.0"
+    }
+
 @app.post("/summarize")
 def summarize(request: TextRequest):
-    summary = summarize_text(request.text)
+    try:
+        summary = summarize_text(request.text)
 
-    return {
-        "summary": summary
-    }
+        return {
+            "summary": summary
+        }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to summarize text: {str(e)}"
+        )

@@ -1,6 +1,17 @@
+import logging
+import time
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
+
 from summarizer import summarize_text
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title="Mike's AI Summarizer API",
@@ -32,14 +43,26 @@ def health():
 
 @app.post("/summarize")
 def summarize(request: TextRequest):
+    start_time = time.time()
+
+    logger.info("Received summarization request.")
+
     try:
         summary = summarize_text(request.text)
+
+        elapsed = time.time() - start_time
+
+        logger.info(
+            f"Summarization completed successfully in {elapsed:.2f} seconds."
+        )
 
         return {
             "summary": summary
         }
 
     except Exception as e:
+        logger.error(f"Summarization failed: {e}")
+
         raise HTTPException(
             status_code=500,
             detail=f"Failed to summarize text: {str(e)}"

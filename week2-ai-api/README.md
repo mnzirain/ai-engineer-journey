@@ -1,6 +1,14 @@
-# 🤖 Week 2 – AI Summarizer API
+# 🤖 Mike's AI Summarizer API
 
-A REST API that summarizes text using Hugging Face Transformers and FastAPI.
+An AI-powered REST API built with **FastAPI** and **Hugging Face Transformers** that summarizes long pieces of text into concise summaries.
+
+This project demonstrates how to integrate a Large Language Model (LLM) into a production-style REST API with:
+
+- Request validation
+- Professional error handling
+- Logging
+- Automated testing
+- Interactive API documentation
 
 ## 🚀 Features
 
@@ -8,7 +16,11 @@ A REST API that summarizes text using Hugging Face Transformers and FastAPI.
 - FastAPI REST API
 - Interactive Swagger documentation
 - JSON request and response
-- Built with Python 3.13
+- Request validation
+- Professional error handling
+- Request logging
+- Health check endpoint
+- Automated unit tests
 
 ## 🛠️ Technologies
 
@@ -19,13 +31,39 @@ A REST API that summarizes text using Hugging Face Transformers and FastAPI.
 - Uvicorn
 - Pydantic
 
+## 🏗️ Architecture
+
+```text
+                User
+                  │
+                  ▼
+        FastAPI REST API
+          (app.py)
+                  │
+                  ▼
+      Summarization Service
+       (summarizer.py)
+                  │
+                  ▼
+ Hugging Face Transformer Model
+ (sshleifer/distilbart-cnn-12-6)
+                  │
+                  ▼
+          JSON Response
+```
+
 ## 📂 Project Structure
 
+```text
 week2-ai-api/
-├── app.py
-├── summarizer.py
-├── requirements.txt
-└── README.md
+│
+├── app.py               # FastAPI application
+├── summarizer.py        # AI summarization logic
+├── test_api.py          # Automated API tests
+├── requirements.txt     # Project dependencies
+├── README.md            # Project documentation
+└── __pycache__/         # Python cache (auto-generated)
+```
 
 ## ▶️ Run the Project
 
@@ -63,6 +101,22 @@ Example response:
 {
   "summary": "AI is transforming industries by improving productivity."
 }
+```
+
+## 🧪 Running the Tests
+
+Run the automated tests with:
+
+```bash
+pytest
+```
+
+Expected output:
+
+```text
+========================
+2 passed
+========================
 ```
 
 ## 🎯 Learning Objectives

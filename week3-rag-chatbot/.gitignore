@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Pytest
+.pytest_cache/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vector database (we'll regenerate this)
+vectorstore/
+
+# Uploaded PDFs (optional - we'll discuss later)
+documents/*.pdf

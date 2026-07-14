@@ -1,16 +1,22 @@
 from pathlib import Path
 
 from pypdf import PdfReader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
 class RAGEngine:
-    """A simple RAG engine for loading and reading PDF documents."""
+    """A simple RAG engine."""
 
     def __init__(self):
         print("RAG Engine initialized.")
 
+        self.text_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=300,
+            chunk_overlap=50
+        )
+
     def load_pdf(self, pdf_path: str) -> str:
-        """Load a PDF and return all extracted text."""
+        """Read a PDF and return its text."""
 
         reader = PdfReader(pdf_path)
 
@@ -24,15 +30,26 @@ class RAGEngine:
 
         return text
 
+    def split_text(self, text: str):
+        """Split text into chunks."""
+
+        chunks = self.text_splitter.split_text(text)
+
+        return chunks
+
     def answer_question(self, question: str) -> str:
-        """Placeholder response until retrieval is implemented."""
 
         pdf_file = Path("documents") / "sample.pdf"
 
-        document_text = self.load_pdf(str(pdf_file))
+        document = self.load_pdf(str(pdf_file))
 
-        return (
+        chunks = self.split_text(document)
+
+        answer = (
             f"Question: {question}\n\n"
-            f"Document Preview:\n"
-            f"{document_text[:800]}"
+            f"Number of chunks: {len(chunks)}\n\n"
+            f"First Chunk:\n\n"
+            f"{chunks[0]}"
         )
+
+        return answer

@@ -36,20 +36,31 @@ class RAGEngine:
 
     def initialize(self):
         """
-        Load the document and build the FAISS index once.
+        Load every PDF and build the FAISS index once.
         """
 
-        print("Loading PDF document...")
+        documents_folder = Path("documents")
 
-        pdf_file = Path("documents") / "sample.pdf"
+        all_chunks = []
 
-        document = self.load_pdf(str(pdf_file))
+        pdf_files = list(documents_folder.glob("*.pdf"))
 
-        print("Splitting document...")
+        for pdf_file in pdf_files:
 
-        self.chunks = self.split_text(document)
+            print(f"Loading {pdf_file.name}")
 
-        print(f"Created {len(self.chunks)} chunks.")
+            document = self.load_pdf(str(pdf_file))
+
+            chunks = self.split_text(document)
+
+            all_chunks.extend(chunks)
+
+        self.chunks = all_chunks
+
+        print(
+            f"Loaded {len(self.chunks)} chunks "
+            f"from {len(pdf_files)} PDF(s)."
+        )
 
         print("Generating embeddings...")
 

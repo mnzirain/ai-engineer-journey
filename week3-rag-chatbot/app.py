@@ -1,6 +1,14 @@
-from fastapi import FastAPI
+from pathlib import Path
+import shutil
+
+from fastapi import (
+    FastAPI,
+    UploadFile,
+    File,
+)
 
 from rag import RAGEngine
+
 
 app = FastAPI(
     title="AI Document Chat API",
@@ -22,6 +30,28 @@ def root():
 def health():
     return {
         "status": "healthy"
+    }
+
+
+@app.post("/upload")
+def upload_pdf(file: UploadFile = File(...)):
+    """
+    Upload a PDF into the knowledge base.
+    """
+
+    documents_folder = Path("documents")
+    documents_folder.mkdir(exist_ok=True)
+
+    destination = documents_folder / file.filename
+
+    with destination.open("wb") as buffer:
+        shutil.copyfileobj(file.file, buffer)
+
+    rag_engine.initialize()
+
+    return {
+        "message": f"{file.filename} uploaded successfully.",
+        "documents": len(list(documents_folder.glob("*.pdf")))
     }
 
 

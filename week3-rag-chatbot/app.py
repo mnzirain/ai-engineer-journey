@@ -57,9 +57,11 @@ def upload_pdf(file: UploadFile = File(...)):
 
 @app.get("/ask")
 def ask(question: str):
-    answer = rag_engine.answer_question(question)
+
+    result = rag_engine.answer_question(question)
 
     return {
         "question": question,
-        "answer": answer,
+        "answer": result["answer"],
+        "sources": result["sources"],
     }

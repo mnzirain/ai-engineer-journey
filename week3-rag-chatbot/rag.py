@@ -176,10 +176,10 @@ class RAGEngine:
             )
         )
 
-    def search(self, question: str, k: int = 3):
+    def search(self, question, k=3):
         """
-        Search the FAISS index and return the
-        top-k matching chunks with metadata.
+        Search the FAISS index and return the top matching chunks
+        together with their source metadata.
         """
 
         question_embedding = self.embedding_model.encode(
@@ -188,16 +188,18 @@ class RAGEngine:
         )
 
         distances, indices = self.index.search(
-            np.asarray(question_embedding, dtype=np.float32),
+            np.asarray(
+                question_embedding,
+                dtype=np.float32,
+            ),
             k,
         )
 
         results = []
 
-        for rank, chunk_index in enumerate(indices[0]):
+        for rank in range(k):
 
-            if chunk_index == -1:
-                continue
+            chunk_index = indices[0][rank]
 
             results.append(
                 {
@@ -209,7 +211,7 @@ class RAGEngine:
 
         return results
 
-    def answer_question(self, question: str) -> str:
+    def answer_question(self, question: str):
         """
         Retrieve relevant context and ask the LLM.
         """
@@ -225,7 +227,7 @@ class RAGEngine:
             print(f"Distance : {chunk['distance']:.4f}")
             print("-" * 60)
             print(chunk["text"][:300])
-            print("\n")
+            print()
 
         print("====================================================\n")
 
@@ -240,4 +242,14 @@ class RAGEngine:
 
         answer = self.llm.generate(prompt)
 
-        return answer
+        # Remove duplicate sources while preserving order
+        sources = []
+
+        for chunk in retrieved_chunks:
+            if chunk["source"] not in sources:
+                sources.append(chunk["source"])
+
+        return {
+            "answer": answer,
+            "sources": sources,
+        }

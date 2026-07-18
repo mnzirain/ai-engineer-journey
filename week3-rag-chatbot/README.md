@@ -37,6 +37,40 @@ Questions are answered using Retrieval-Augmented Generation (RAG). The applicati
 
 ---
 
+---
+
+# 🏗️ System Architecture
+
+The RAG chatbot follows a modular Retrieval-Augmented Generation (RAG) architecture.
+
+![RAG Architecture](architecture/rag-architecture.png)
+
+### Architecture Flow
+
+1. User submits a question through the FastAPI REST API.
+2. The RAG Engine converts the question into an embedding.
+3. FAISS performs semantic similarity search.
+4. The most relevant document chunks are retrieved.
+5. A prompt is constructed using the retrieved context.
+6. The LLM generates a grounded response.
+7. The API returns both the answer and the document sources.
+
+---
+
+# ⚙️ Engineering Highlights
+
+This project demonstrates production-oriented AI engineering practices:
+
+- Modular architecture
+- Separation of Retrieval and Generation
+- Vector Search using FAISS
+- Embedding generation using SentenceTransformers
+- Prompt engineering
+- REST API design with FastAPI
+- Source attribution
+- Professional Git workflow
+- Project documentation
+
 # 💼 Key Skills Demonstrated
 
 This project demonstrates practical AI Engineering skills including:

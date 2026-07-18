@@ -1,8 +1,32 @@
 # 📚 Week 3 – AI Document Chat (RAG)
 
-An AI-powered Retrieval-Augmented Generation (RAG) application that allows users to upload documents and ask questions about their content.
+A production-style Retrieval-Augmented Generation (RAG) application built with FastAPI, FAISS, SentenceTransformers, and Hugging Face Transformers. Users can upload PDF documents and ask natural language questions grounded only in the uploaded knowledge base.
 
 ---
+
+## 📸 Demo
+
+### Swagger API
+
+![Swagger API](screenshots/swagger-home.png)
+
+The project exposes a REST API built with FastAPI. Interactive API documentation is available through Swagger UI.
+
+---
+
+### Upload PDF
+
+![Upload PDF](screenshots/upload-api.png)
+
+Users can upload one or more PDF documents, which are automatically processed into searchable chunks and indexed using FAISS.
+
+---
+
+### Ask Questions
+
+![RAG Answer](screenshots/rag-answer.png)
+
+Questions are answered using Retrieval-Augmented Generation (RAG). The application retrieves the most relevant document chunks before generating a grounded response using Google FLAN-T5.
 
 ## 🚀 Features
 

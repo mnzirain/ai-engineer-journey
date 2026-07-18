@@ -1,6 +1,13 @@
 # 📚 Week 3 – AI Document Chat (RAG)
 
-A production-style Retrieval-Augmented Generation (RAG) application built with FastAPI, FAISS, SentenceTransformers, and Hugging Face Transformers. Users can upload PDF documents and ask natural language questions grounded only in the uploaded knowledge base.
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Production-009688?logo=fastapi)
+![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-orange)
+![SentenceTransformers](https://img.shields.io/badge/SentenceTransformers-Embeddings-red)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FLAN--T5-yellow?logo=huggingface)
+![RAG](https://img.shields.io/badge/RAG-Retrieval%20Augmented%20Generation-success)
+
+An AI-powered Retrieval-Augmented Generation (RAG) chatbot capable of indexing PDF documents, performing semantic search with vector embeddings, and generating context-aware answers using a Large Language Model (LLM).
 
 ---
 
@@ -27,6 +34,24 @@ Users can upload one or more PDF documents, which are automatically processed in
 ![RAG Answer](screenshots/rag-answer.png)
 
 Questions are answered using Retrieval-Augmented Generation (RAG). The application retrieves the most relevant document chunks before generating a grounded response using Google FLAN-T5.
+
+---
+
+# 💼 Key Skills Demonstrated
+
+This project demonstrates practical AI Engineering skills including:
+
+- Retrieval-Augmented Generation (RAG)
+- Semantic Search
+- Vector Databases (FAISS)
+- Sentence Embeddings
+- Prompt Engineering
+- Large Language Models (FLAN-T5)
+- FastAPI REST APIs
+- PDF Processing
+- Python Software Engineering
+- Git & GitHub Workflow
+- Debugging & Production Readiness
 
 ## 🚀 Features
 
@@ -91,25 +116,29 @@ This project demonstrates:
 
 ---
 
-## 📈 Roadmap
+# 🚀 Future Improvements
 
-- [x] Build project structure
-- [x] Create professional README
-- [x] Configure requirements
-- [x] Build FastAPI application
-- [x] Build initial RAG engine
-- [x] Connect API to RAG engine
-- [x] Test API endpoints
-- [ ] Upload PDF
-- [ ] Extract document text
-- [ ] Chunk documents
-- [ ] Generate embeddings
-- [ ] Store vectors
-- [ ] Semantic search
-- [ ] AI question answering
-- [ ] Dockerize application
-- [ ] Deploy to the cloud
+- Cloud Deployment (Azure / AWS)
+- Docker Compose
+- Streaming Responses
+- Multiple LLM Support
+- OpenAI Integration
+- Llama 3 Support
+- Mistral Support
+- User Authentication
+- Persistent Vector Database
+- Conversation Memory
+- Production Logging
 
 ---
 
-Developed by **Mike Nzirainengwe**
+---
+
+## 👨‍💻 Author
+
+**Mike Nzirainengwe**
+
+AI Engineer | Generative AI | Retrieval-Augmented Generation (RAG) | FastAPI | Python | LLM Applications
+
+GitHub:
+https://github.com/mnzirain

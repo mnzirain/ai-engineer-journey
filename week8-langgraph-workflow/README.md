@@ -172,33 +172,75 @@ The application builds successfully inside Docker and executes the workflow.
 
 ## Screenshots
 
-### Enterprise Planner
+### 1. First LangGraph Workflow
 
-![Planner](Screenshots/03-enterprise-planner.png)
+Demonstrates the first successful LangGraph workflow execution.
 
----
-
-### Greeting Workflow
-
-![Greeting](Screenshots/05-greeting-workflow.png)
+![First Workflow](Screenshots/01-first-workflow.png)
 
 ---
 
-### Docker Build
+### 2. Multi-Node Workflow
 
-![Docker Build](Screenshots/14-week8-docker-build-success.png)
+Shows the transition from a single-node workflow to a multi-node enterprise workflow.
 
----
-
-### Docker Execution
-
-![Docker Run](Screenshots/15-week8-docker-greeting-success.png)
+![Multi Node Workflow](Screenshots/02-multi-node-workflow.png)
 
 ---
 
-### Enterprise Architecture
+### 3. Enterprise Workflow
 
-![Architecture](Screenshots/16-week8-enterprise-architecture.png)
+Demonstrates the enterprise version of the LangGraph workflow.
+
+![Enterprise Workflow](Screenshots/03-enterprise-workflow.png)
+
+---
+
+### 4. Enterprise Workflow Code
+
+Core implementation of the enterprise workflow architecture.
+
+![Workflow Code](Screenshots/04-enterprise-workflow-code.png)
+
+---
+
+### 5. Conditional Routing
+
+Planner successfully selecting the correct workflow based on user input.
+
+![Conditional Routing](Screenshots/05-conditional-routing.png)
+
+---
+
+### 6. Conditional Routing Code
+
+Implementation of the enterprise routing logic.
+
+![Conditional Routing Code](Screenshots/06-conditional-routing-code.png)
+
+---
+
+### 7. Docker Build
+
+Successful containerization of the project.
+
+![Docker Build](Screenshots/07-docker-build.png)
+
+---
+
+### 8. Docker Execution
+
+Successful execution of the application inside a Docker container.
+
+![Docker Run](Screenshots/08-docker-run.png)
+
+---
+
+### 9. Enterprise Architecture
+
+Final enterprise architecture used throughout Week 8.
+
+![Enterprise Architecture](Screenshots/09-enterprise-architecture.png)
 
 ---
 

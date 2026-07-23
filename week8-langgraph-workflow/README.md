@@ -7,12 +7,13 @@
 ![Pytest](https://img.shields.io/badge/Tests-Pytest-success)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![AI Engineer Journey](https://img.shields.io/badge/AI%20Engineer%20Journey-Week%208-purple)
+![Enterprise Track](https://img.shields.io/badge/Track-Enterprise%20AI-red)
 
 > Building Enterprise AI Workflows using LangGraph 1.x
 
 ---
 
-## Overview
+# Overview
 
 This project demonstrates how to build an enterprise-ready AI workflow using **LangGraph 1.x**.
 
@@ -41,6 +42,19 @@ The objective is to learn workflow orchestration while designing software that r
 
 ---
 
+# Development Timeline
+
+- ✅ Enterprise workflow architecture
+- ✅ Planner service
+- ✅ Workflow registry
+- ✅ Multi-node execution
+- ✅ Conditional routing
+- ✅ Docker containerization
+- ✅ Automated testing
+- ✅ Architecture documentation
+
+---
+
 # Project Structure
 
 ```text
@@ -51,81 +65,58 @@ week8-langgraph-workflow/
 ├── Dockerfile
 ├── .dockerignore
 ├── pytest.ini
+├── .gitignore
 ├── README.md
 
-├── config/
-│   ├── __init__.py
-│   └── settings.py
-
-├── services/
-│   ├── __init__.py
-│   └── planner_service.py
-
-├── graphs/
-│   ├── __init__.py
-│   ├── greeting_graph.py
-│   └── workflow_registry.py
-
-├── nodes/
-│   ├── planner_node.py
-│   ├── greeting_node.py
-│   ├── knowledge_node.py
-│   └── calculator_node.py
-
-├── state/
-│   ├── __init__.py
-│   └── workflow_state.py
-
-├── tests/
-│   ├── __init__.py
-│   └── test_planner.py
-
 ├── architecture/
-
-└── Screenshots/
+├── config/
+├── graphs/
+├── nodes/
+├── Screenshots/
+├── services/
+├── state/
+└── tests/
 ```
 
 ---
 
-## Enterprise Architecture
+# Enterprise Architecture
 
 The following diagram illustrates the enterprise workflow introduced in Week 8.
 
-![Architecture](Screenshots/16-week8-enterprise-architecture.png)
+<img src="./Screenshots/09-enterprise-architecture.png" width="900">
 
-This project introduces an enterprise workflow architecture:
+---
+
+# Enterprise Workflow
 
 ```text
-                User
+                 User
 
-                  │
+                   │
 
-                  ▼
+                   ▼
 
-         Enterprise Planner
+          Enterprise Planner
 
-                  │
+                   │
 
-                  ▼
+                   ▼
 
-          Workflow Registry
+           Workflow Registry
 
-      ┌─────────┼─────────┐
+      ┌──────────┼──────────┐
 
-      ▼         ▼         ▼
+      ▼          ▼          ▼
 
  Greeting   Calculator   Knowledge
 
  Workflow    Workflow    Workflow
+
+      ▼          ▼          ▼
+
+          AI Response
 ```
-
-This architecture separates:
-
-- decision making
-- workflow selection
-- workflow execution
-
-which improves scalability and maintainability.
 
 ---
 
@@ -155,7 +146,7 @@ Current tests:
 
 Result:
 
-✅ 3 Tests Passed
+✅ **3 Tests Passed**
 
 ---
 
@@ -170,77 +161,77 @@ The application builds successfully inside Docker and executes the workflow.
 
 ---
 
-## Screenshots
+# Screenshots
 
-### 1. First LangGraph Workflow
+## 1. First LangGraph Workflow
 
-Demonstrates the first successful LangGraph workflow execution.
+Demonstrates the first successful LangGraph workflow.
 
-![First Workflow](Screenshots/01-first-workflow.png)
-
----
-
-### 2. Multi-Node Workflow
-
-Shows the transition from a single-node workflow to a multi-node enterprise workflow.
-
-![Multi Node Workflow](Screenshots/02-multi-node-workflow.png)
+<img src="./Screenshots/01-first-workflow.png" width="900">
 
 ---
 
-### 3. Enterprise Workflow
+## 2. Multi-Node Workflow
 
-Demonstrates the enterprise version of the LangGraph workflow.
+Shows the evolution from a single-node workflow to multiple nodes.
 
-![Enterprise Workflow](Screenshots/03-enterprise-workflow.png)
-
----
-
-### 4. Enterprise Workflow Code
-
-Core implementation of the enterprise workflow architecture.
-
-![Workflow Code](Screenshots/04-enterprise-workflow-code.png)
+<img src="./Screenshots/02-multi-node-workflow.png" width="900">
 
 ---
 
-### 5. Conditional Routing
+## 3. Enterprise Workflow
 
-Planner successfully selecting the correct workflow based on user input.
+Enterprise LangGraph workflow implementation.
 
-![Conditional Routing](Screenshots/05-conditional-routing.png)
-
----
-
-### 6. Conditional Routing Code
-
-Implementation of the enterprise routing logic.
-
-![Conditional Routing Code](Screenshots/06-conditional-routing-code.png)
+<img src="./Screenshots/03-enterprise-workflow.png" width="900">
 
 ---
 
-### 7. Docker Build
+## 4. Enterprise Workflow Code
 
-Successful containerization of the project.
+Core implementation of the enterprise workflow.
 
-![Docker Build](Screenshots/07-docker-build.png)
-
----
-
-### 8. Docker Execution
-
-Successful execution of the application inside a Docker container.
-
-![Docker Run](Screenshots/08-docker-run.png)
+<img src="./Screenshots/04-enterprise-workflow-code.png" width="900">
 
 ---
 
-### 9. Enterprise Architecture
+## 5. Conditional Routing
 
-Final enterprise architecture used throughout Week 8.
+Planner successfully selects the correct workflow.
 
-![Enterprise Architecture](Screenshots/09-enterprise-architecture.png)
+<img src="./Screenshots/05-conditional-routing.png" width="900">
+
+---
+
+## 6. Conditional Routing Code
+
+Implementation of the routing logic.
+
+<img src="./Screenshots/06-conditional-routing-code.png" width="900">
+
+---
+
+## 7. Docker Build
+
+Successful Docker image build.
+
+<img src="./Screenshots/07-docker-build.png" width="900">
+
+---
+
+## 8. Docker Execution
+
+Application successfully running inside Docker.
+
+<img src="./Screenshots/08-docker-run.png" width="900">
+
+---
+
+## 9. Enterprise Architecture
+
+Final enterprise architecture.
+
+<img src="./Screenshots/09-enterprise-architecture.png" width="900">
 
 ---
 
@@ -274,9 +265,9 @@ This architecture more closely resembles production AI systems and becomes the f
 
 Week 9 introduces:
 
-- Multiple independent workflow graphs
-- Enterprise Workflow Platform
-- Dynamic graph selection
+- Enterprise Multi-Workflow Platform
+- Independent workflow graphs
+- Dynamic workflow selection
 - Workflow orchestration
 - Scalable AI platform architecture
 
@@ -290,6 +281,7 @@ AI Engineer Journey
 
 Building towards becoming:
 
-- LLM Engineer
+- World-class LLM Engineer
 - AI Infrastructure Engineer
 - AI Architect
+- Founder of MedNavi AI

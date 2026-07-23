@@ -1,225 +1,244 @@
 # 👋 Hi, I'm Mike Nzirainengwe
 
-## AI Engineer | Generative AI | LLM Applications | RAG | FastAPI | Python
-
-Building production-ready AI systems through hands-on engineering projects.
-
-My focus is designing practical applications powered by Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), FastAPI, vector databases, and modern AI engineering practices.
-
-My long-term vision is to build enterprise AI products that solve real-world healthcare and business problems, beginning with **MedNavi AI**, an intelligent multilingual clinical documentation platform.
-
----
-
-# 🚀 Current AI Engineering Journey
-
-## ✅ Completed Projects
-
-| Project | Skills Demonstrated |
-|---------|---------------------|
-| Week 1 — AI Text Summarizer | Hugging Face, NLP, Transformers |
-| Week 2 — FastAPI AI API | REST APIs, FastAPI, JSON |
-| Week 3 — Production RAG Chatbot | RAG, FAISS, Semantic Search, PDF Processing |
-| Week 4 — Conversational AI with Memory | Conversation Memory, Prompt Engineering, Stateful AI |
+![AI Engineer](https://img.shields.io/badge/AI-Engineer-blue)
+![LLM Engineer](https://img.shields.io/badge/LLM-Engineer-success)
+![AI Infrastructure](https://img.shields.io/badge/AI-Infrastructure-red)
+![AI Architect](https://img.shields.io/badge/Future-AI%20Architect-purple)
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
+![LangGraph](https://img.shields.io/badge/LangGraph-Enterprise-success)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-mnzirain-black?logo=github)
 
 ---
 
-# 🛠 AI Engineering Tech Stack
+# 🚀 Mission
+
+I am building production-ready Artificial Intelligence systems while transforming myself into a:
+
+- 🌍 World-Class LLM Engineer
+- ☁️ AI Infrastructure Engineer
+- 🏗️ AI Architect
+- 💡 Founder of MedNavi AI
+
+This repository documents my complete journey from AI engineering fundamentals to enterprise-scale AI systems through practical, production-oriented projects.
+
+---
+
+# 👨‍💻 About Me
+
+I am an AI Engineer in training with a strong background in language technologies and enterprise problem solving.
+
+My focus is on building:
+
+- Large Language Model Applications
+- AI Agents
+- Multi-Agent Systems
+- Retrieval-Augmented Generation (RAG)
+- AI Infrastructure
+- Production AI APIs
+- Enterprise AI Platforms
+
+Every project in this repository is designed to simulate real-world engineering practices rather than tutorial-style examples.
+
+---
+
+# 🩺 Flagship Project — MedNavi AI
+
+**MedNavi AI** is my long-term flagship AI platform.
+
+> **Simple. Lovable. Complete.**
+
+An enterprise clinical AI assistant designed to support healthcare professionals through intelligent documentation and decision support.
+
+Planned capabilities include:
+
+- 🩺 AI Medical Scribe
+- 📋 Clinical Documentation
+- 🔎 Medical Knowledge Retrieval (RAG)
+- 🌍 Multilingual Healthcare AI
+- 🤖 Clinical Decision Support
+- ☁️ Enterprise Healthcare SaaS Platform
+
+MedNavi AI serves as the practical application of the engineering skills developed throughout this journey.
+
+---
+
+# 🗺️ AI Engineer Journey Roadmap
+
+## Phase 1 — Foundations ✅
+
+- ✅ Week 1 – AI Text Summarizer
+- ✅ Week 2 – FastAPI AI API
+- ✅ Week 3 – Production LLM APIs
+- ✅ Week 4 – Retrieval-Augmented Generation
+- ✅ Week 5 – Embeddings & Vector Search
+- ✅ Week 6 – AI Memory Systems
+- ✅ Week 7 – Multi-Agent Orchestrator
+- ✅ Week 8 – Enterprise LangGraph Workflow
+
+---
+
+## Phase 2 — Enterprise AI Platforms 🚧
+
+- 🚧 Week 9 – Enterprise Multi-Workflow Platform
+- ⏳ Week 10 – Production RAG Platform
+- ⏳ Week 11 – AI Evaluation Framework
+- ⏳ Week 12 – AI Infrastructure
+- ⏳ Week 13 – Kubernetes AI Deployment
+- ⏳ Week 14 – MLOps Pipeline
+- ⏳ Week 15 – Enterprise AI SaaS
+- ⏳ Week 16 – Interview Portfolio & Production Readiness
+
+---
+
+# 📈 Progress Tracker
+
+| Week | Project | Status |
+|------|---------|:------:|
+| 1 | AI Text Summarizer | ✅ |
+| 2 | FastAPI AI API | ✅ |
+| 3 | Production LLM APIs | ✅ |
+| 4 | Retrieval-Augmented Generation | ✅ |
+| 5 | Embeddings & Vector Search | ✅ |
+| 6 | AI Memory Systems | ✅ |
+| 7 | Multi-Agent Orchestrator | ✅ |
+| 8 | Enterprise LangGraph Workflow | ✅ |
+| 9 | Enterprise Multi-Workflow Platform | 🚧 |
+| 10–16 | Enterprise AI Engineering | ⏳ |
+
+---
+
+# ⭐ Featured Projects
+
+## ✅ Enterprise LangGraph Workflow
+
+Enterprise workflow orchestration using LangGraph 1.x.
+
+Highlights:
+
+- Planner
+- Workflow Registry
+- Conditional Routing
+- Docker
+- Unit Testing
+- Enterprise Architecture
+
+---
+
+## 🚧 MedNavi AI
+
+Enterprise Healthcare AI Platform.
+
+Status:
+
+Active Development
+
+---
+
+## 🚧 Shona LLM
+
+Large Language Model resources for low-resource African languages.
+
+Status:
+
+Research & Dataset Development
+
+---
+
+# 🛠️ Technologies
 
 ### Programming
 
 - Python
-- REST APIs
-- JSON
+- SQL
 - Git
-- GitHub
 
-### AI & Machine Learning
+### AI / Machine Learning
 
-- Prompt Engineering
-- Large Language Models (LLMs)
-- Hugging Face Transformers
-- Sentence Transformers
-- Retrieval-Augmented Generation (RAG)
-- Semantic Search
-- Vector Embeddings
-- FAISS Vector Database
+- OpenAI
+- LangChain
+- LangGraph
+- Transformers
+- Hugging Face
+- RAG
+- Vector Databases
 
-### Backend Engineering
+### Backend
 
 - FastAPI
-- Modular API Design
-- Production-ready Python Applications
+- Supabase
+- Redis
 
-### Tools
+### Infrastructure
 
 - Docker
+- Kubernetes (Learning)
+- Cloud Deployment (Learning)
+
+### Development Tools
+
 - VS Code
-- Git
 - GitHub
+- Pytest
 
 ---
 
-# 📂 Featured Projects
-
-## 📚 Week 1 — AI Text Summarizer
-
-### Highlights
-
-- Text Summarization
-- Hugging Face Transformers
-- NLP
-- Python
-
-📁 `week1-ai-summarizer`
-
----
-
-## ⚡ Week 2 — AI REST API
-
-### Highlights
-
-- FastAPI
-- REST APIs
-- Swagger
-- JSON APIs
-
-📁 `week2-ai-api`
-
----
-
-## 📖 Week 3 — Production RAG Chatbot
-
-### Highlights
-
-- Retrieval-Augmented Generation
-- PDF Knowledge Base
-- FAISS Vector Search
-- Sentence Embeddings
-- Prompt Engineering
-- Source Citations
-- FastAPI
-- Modular Architecture
-
-📁 `week3-rag-chatbot`
-
----
-
-## 💬 Week 4 — Conversational AI with Memory
-
-### Highlights
-
-- Multi-turn Conversations
-- Conversation Memory
-- Prompt Builder
-- FastAPI
-- Stateful AI
-- Prompt Engineering
-
-📁 `week4-conversational-ai`
-
----
-
-# 📈 Learning Timeline
-
-| Stage | Focus | Status |
-|--------|-------|--------|
-| Week 1 | AI Text Summarization | ✅ |
-| Week 2 | FastAPI AI Services | ✅ |
-| Week 3 | Retrieval-Augmented Generation | ✅ |
-| Week 4 | Conversational AI Memory | ✅ |
-| Week 5 | AI Agents & Tool Calling | 🚀 Next |
-| Week 6 | LangGraph | 🚀 Planned |
-| Week 7 | LlamaIndex | 🚀 Planned |
-| Week 8 | Production AI Deployment | 🚀 Planned |
-| Flagship | MedNavi AI | 🎯 Long-term Vision |
-
----
-
-# 📚 Professional Development Roadmap
-
-## ✅ Completed
-
-- Python for AI Engineering
-- FastAPI REST APIs
-- Prompt Engineering
-- Hugging Face Transformers
-- Sentence Transformers
-- Retrieval-Augmented Generation (RAG)
-- FAISS Vector Search
-- PDF Processing
-- Semantic Search
-- Conversation Memory
-- Git & GitHub
-- Production Project Documentation
-
-## 🚧 Currently Building
-
-- AI Agents
-- LangGraph
-- LlamaIndex
-- ChromaDB
-- Pinecone
-- Kubernetes for AI
-- Azure AI Services
-- AWS AI Services
-- MLOps for LLM Applications
-
----
-
-# 🏆 Engineering Philosophy
-
-I believe the best way to master AI engineering is by building complete, production-style applications rather than isolated code examples.
-
-Each project in this repository is developed from first principles before adopting higher-level frameworks. This approach strengthens my understanding of system design, debugging, deployment, and scalable AI architecture.
-
----
-
-# 🎯 Career Objective
-
-Seeking opportunities as an:
-
-- AI Engineer
-- Generative AI Engineer
-- LLM Engineer
-- AI Platform Engineer
-
-where I can design, build, and deploy production-ready AI systems using Python, FastAPI, Retrieval-Augmented Generation, vector databases, and Large Language Models.
-
----
-
-# 🌍 Flagship Vision — MedNavi AI
-
-MedNavi AI is my long-term AI engineering project.
-
-### Planned capabilities
-
-- AI Medical Scribe
-- Clinical Documentation
-- Clinical Decision Support
-- Medical Knowledge Retrieval
-- Multilingual Healthcare AI
-- Enterprise SaaS Platform
-
----
-
-# 🏅 Certifications
+# 📜 Certifications
 
 - AWS Foundations of Prompt Engineering
-- Prompt Engineering
-- SEO (Semrush Academy)
 - Docker Essentials
 - Redis Fundamentals
-- Kubernetes Fundamentals
-- CompTIA Cloud (Foundations)
+- CompTIA Cloud
+- Semrush SEO Certification
+- Voiceover Training
+- Certificate in Translation & Interpretation Studies
 
 ---
 
-# 📫 Connect
+# 📂 Repository Map
+
+| Week | Folder |
+|------|--------|
+| Week 1 | AI Summarizer |
+| Week 2 | FastAPI AI API |
+| Week 3 | Production LLM APIs |
+| Week 4 | RAG |
+| Week 5 | Embeddings |
+| Week 6 | Memory |
+| Week 7 | Multi-Agent |
+| Week 8 | Enterprise LangGraph |
+
+---
+
+# 🎯 Current Focus
+
+Current engineering priorities:
+
+- Enterprise AI Platforms
+- LangGraph
+- Multi-Agent Systems
+- AI Infrastructure
+- Production LLM Applications
+- MedNavi AI
+
+---
+
+# 📬 Connect
 
 GitHub:
 
-**https://github.com/mnzirain**
+👉 https://github.com/mnzirain
+
+LinkedIn:
+
+*(Coming Soon — will be professionally optimized during the Interview Preparation phase.)*
 
 ---
 
-> **"Learning AI Engineering by building production-ready systems, one project at a time."**
+# ⭐ AI Engineer Journey
+
+This repository represents a structured, production-oriented journey toward becoming a world-class AI Engineer.
+
+Every week introduces real engineering practices with an emphasis on architecture, scalability, testing, documentation, deployment, and enterprise software design.
+
+**"Learning AI by Building AI."**

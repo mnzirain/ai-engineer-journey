@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environments
+.venv/
+.venv313/
+
+# VS Code
+.vscode/
+
+# Docker
+*.log
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

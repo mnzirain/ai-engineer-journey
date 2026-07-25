@@ -1,0 +1,16 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.venv313/
+.git/
+.gitignore
+
+screenshots/
+
+*.pyc
+*.pyo
+*.pyd
+
+.vscode/
+
+docs/

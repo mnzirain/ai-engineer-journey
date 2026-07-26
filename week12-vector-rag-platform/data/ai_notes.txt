@@ -1,0 +1,9 @@
+Artificial Intelligence is the science of building systems that perform tasks requiring human intelligence.
+
+Machine Learning is a subset of Artificial Intelligence.
+
+Deep Learning uses neural networks.
+
+Retrieval-Augmented Generation combines retrieval systems with language models to improve factual accuracy.
+
+Vector databases store embeddings for semantic search.

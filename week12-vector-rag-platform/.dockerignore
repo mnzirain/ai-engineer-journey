@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+.venv313/
+venv/
+
+# Git
+.git/
+.gitignore
+
+# Pytest
+.pytest_cache/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Screenshots and docs (not needed inside runtime container)
+screenshots/
+docs/
+
+# Local vector index/cache (if generated later)
+*.faiss
+*.index
+
+# Environment files
+.env

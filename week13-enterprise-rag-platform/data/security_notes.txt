@@ -1,0 +1,9 @@
+Cybersecurity protects systems against unauthorized access.
+
+Encryption protects sensitive enterprise data.
+
+Authentication verifies user identity.
+
+Authorization determines what users are allowed to access.
+
+Zero Trust architecture assumes that no user or system is automatically trusted.

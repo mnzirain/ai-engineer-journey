@@ -1,0 +1,9 @@
+Electronic Health Records (EHR) centralize patient information.
+
+Clinical documentation should be accurate, structured and secure.
+
+SOAP notes contain Subjective, Objective, Assessment and Plan sections.
+
+Medical AI assistants help clinicians retrieve knowledge faster while reducing administrative burden.
+
+Healthcare AI systems must protect patient privacy and comply with regulations.

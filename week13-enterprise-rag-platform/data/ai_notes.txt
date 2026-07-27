@@ -1,0 +1,11 @@
+Artificial Intelligence (AI) enables machines to perform tasks that normally require human intelligence.
+
+Machine Learning is a subset of AI that learns patterns from data.
+
+Deep Learning uses neural networks with many layers.
+
+Large Language Models (LLMs) are trained on massive datasets and generate natural language responses.
+
+Retrieval-Augmented Generation (RAG) combines semantic retrieval with language generation to improve factual accuracy.
+
+Vector databases store embeddings that allow semantic similarity search.

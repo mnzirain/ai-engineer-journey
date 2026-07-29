@@ -1,15 +1,16 @@
-# Enterprise RAG Knowledge Platform
+# Week 13 – Enterprise Retrieval-Augmented Generation (RAG) Knowledge Platform
 
-![Python](https://img.shields.io/badge/Python-3.13-blue)
-![FAISS](https://img.shields.io/badge/FAISS-Vector%20Database-orange)
-![SentenceTransformers](https://img.shields.io/badge/SentenceTransformers-Embeddings-red)
-![Enterprise AI](https://img.shields.io/badge/RAG-Enterprise-green)
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
+![FAISS](https://img.shields.io/badge/FAISS-Vector_Search-orange)
+![Sentence Transformers](https://img.shields.io/badge/Sentence_Transformers-Embeddings-red)
+![Enterprise RAG](https://img.shields.io/badge/RAG-Enterprise-success)
 ![Pytest](https://img.shields.io/badge/Pytest-Passing-success)
-![Docker Ready](https://img.shields.io/badge/Docker-Ready-blue)
+![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+> **Production-ready Enterprise Retrieval-Augmented Generation (RAG) platform implementing semantic retrieval, FAISS vector search, enterprise knowledge management, and AI-powered document understanding.**
 
 ---
-
-# Week 13 – Enterprise Retrieval-Augmented Generation (RAG) Knowledge Platform
 
 ## Overview
 

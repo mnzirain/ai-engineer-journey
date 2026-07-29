@@ -1,16 +1,17 @@
-# Enterprise Vector Databases & Semantic Search Platform
+# Week 12 – Enterprise Vector Databases & Semantic Search
 
-![Python](https://img.shields.io/badge/Python-3.13-blue)
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
 ![LangChain](https://img.shields.io/badge/LangChain-Latest-green)
-![SentenceTransformers](https://img.shields.io/badge/SentenceTransformers-Embeddings-red)
-![FAISS](https://img.shields.io/badge/FAISS-Vector%20Database-orange)
-![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![Sentence Transformers](https://img.shields.io/badge/Sentence_Transformers-Embeddings-red)
+![FAISS](https://img.shields.io/badge/FAISS-Vector_Search-orange)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
 ![Pytest](https://img.shields.io/badge/Pytest-Passing-success)
 ![Enterprise AI](https://img.shields.io/badge/Enterprise-AI%20Engineering-purple)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+> **Production-style enterprise semantic search platform using FAISS, Sentence Transformers, LangChain, FastAPI, and enterprise vector database architecture.**
 
 ---
-
-# Week 12 – Enterprise Vector Databases & Semantic Search
 
 ## Overview
 

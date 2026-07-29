@@ -1,0 +1,9 @@
+Cybersecurity protects enterprise systems.
+
+Encryption protects sensitive information.
+
+Authentication verifies user identity.
+
+Authorization controls access to resources.
+
+Zero Trust assumes no user or device is trusted by default.

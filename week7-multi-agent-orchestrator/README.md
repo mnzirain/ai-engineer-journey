@@ -1,14 +1,14 @@
 # Week 7 – Enterprise Multi-Agent Orchestrator
 
-# Week 7 – Enterprise Multi-Agent Orchestrator
-
 ![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Framework-009688?logo=fastapi)
-![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![AI Architecture](https://img.shields.io/badge/Architecture-Multi--Agent-purple)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![Architecture](https://img.shields.io/badge/Architecture-Multi--Agent-purple)
 ![Portfolio](https://img.shields.io/badge/Portfolio-AI%20Engineering-orange)
+
+> **Production-style Enterprise Multi-Agent Orchestrator built with FastAPI, modular agents, centralized routing, and enterprise software architecture.**
 
 ## Project Overview
 

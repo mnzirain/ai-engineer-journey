@@ -1,0 +1,9 @@
+Artificial Intelligence (AI) enables computers to perform tasks that normally require human intelligence.
+
+Machine Learning is a subset of AI.
+
+Deep Learning uses neural networks with many layers.
+
+Large Language Models (LLMs) understand and generate human language.
+
+Retrieval-Augmented Generation (RAG) improves factual accuracy by retrieving external knowledge before generating answers.

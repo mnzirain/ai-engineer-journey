@@ -1,0 +1,9 @@
+Electronic Health Records store patient information.
+
+SOAP Notes consist of Subjective, Objective, Assessment and Plan.
+
+Medical AI assists clinicians with documentation and decision support.
+
+Clinical documentation should be structured, accurate and secure.
+
+Healthcare AI improves efficiency while reducing administrative workload.

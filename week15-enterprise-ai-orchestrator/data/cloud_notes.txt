@@ -1,0 +1,9 @@
+Cloud computing provides scalable infrastructure on demand.
+
+Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform are the leading cloud providers.
+
+Docker packages applications together with their dependencies.
+
+Kubernetes orchestrates containerized applications across clusters.
+
+Infrastructure as Code automates cloud deployment.

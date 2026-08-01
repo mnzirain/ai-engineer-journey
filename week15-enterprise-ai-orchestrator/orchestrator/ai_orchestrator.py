@@ -10,36 +10,74 @@ class EnterpriseAIOrchestrator:
 
         q = query.lower()
 
-        # Translation workflow
+        # ---------------------------------------------------
+        # SEARCH → SUMMARIZE → TRANSLATE
+        # ---------------------------------------------------
+
         if "translate" in q:
 
-            summary = self.registry.summarizer.summarize(query)
+            results = self.registry.search.search(query)
+
+            context = "\n\n".join(
+                item["text"] for item in results
+            )
+
+            summary = self.registry.summarizer.summarize(context)
 
             translation = self.registry.translator.translate(summary)
 
             return {
-                "task": "translation",
+
+                "workflow": "search → summarize → translate",
+
                 "query": query,
+
+                "sources": results,
+
                 "summary": summary,
+
                 "translation": translation
+
             }
 
-        # Summarization workflow
+        # ---------------------------------------------------
+        # SEARCH → SUMMARIZE
+        # ---------------------------------------------------
+
         if "summarize" in q or len(query.split()) > 25:
 
-            summary = self.registry.summarizer.summarize(query)
+            results = self.registry.search.search(query)
+
+            context = "\n\n".join(
+                item["text"] for item in results
+            )
+
+            summary = self.registry.summarizer.summarize(context)
 
             return {
-                "task": "summarization",
+
+                "workflow": "search → summarize",
+
                 "query": query,
+
+                "sources": results,
+
                 "summary": summary
+
             }
 
-        # Default: semantic search
+        # ---------------------------------------------------
+        # SEMANTIC SEARCH ONLY
+        # ---------------------------------------------------
+
         results = self.registry.search.search(query)
 
         return {
-            "task": "semantic_search",
+
+            "workflow": "semantic search",
+
             "query": query,
+
             "results": results
+
         }

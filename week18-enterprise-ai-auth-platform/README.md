@@ -1,4 +1,13 @@
-# Enterprise AI Authentication & Authorization Platform
+# Week 18 – Enterprise AI Authentication & Authorization Platform
+
+Enterprise-grade authentication, API key security, RBAC authorization, and secure tool access for AI platforms.
+
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-REST%20API-green)
+![Authentication](https://img.shields.io/badge/Authentication-Enterprise-orange)
+![Authorization](https://img.shields.io/badge/RBAC-Role%20Based-red)
+![MCP](https://img.shields.io/badge/MCP-Compatible-purple)
+![Docker](https://img.shields.io/badge/Docker-Deployable-blue)
 
 > **Secure Identity Layer for Enterprise AI Systems**
 

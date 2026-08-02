@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+
+  enterprise-ai-gateway:
+
+    build: .
+
+    container_name: enterprise-ai-gateway
+
+    ports:
+
+      - "8000:8000"

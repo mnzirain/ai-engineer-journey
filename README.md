@@ -1,1092 +1,902 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mnzirain/mnzirain/main/images/github-banner.png" alt="Mike Nzirainengwe Enterprise AI Banner" width="100%">
+</p>
+
 # 👋 Hi, I'm Mike Nzirainengwe
 
-## Enterprise AI Platform Engineer | LLM Engineer | AI Infrastructure Engineer
+## Enterprise AI Platform Engineer • LLM Engineer • AI Infrastructure Engineer
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Enterprise-009688?logo=fastapi)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker)
 ![OpenAI](https://img.shields.io/badge/OpenAI-LLMs-412991)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?logo=huggingface)
 ![LangChain](https://img.shields.io/badge/LangChain-Agentic_AI-00A67E)
+![LangGraph](https://img.shields.io/badge/LangGraph-Orchestration-success)
+![Redis](https://img.shields.io/badge/Redis-Vector_Cache-red)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
 ![OAuth2](https://img.shields.io/badge/OAuth2-Security-orange)
 ![JWT](https://img.shields.io/badge/JWT-Authentication-red)
 ![Enterprise AI](https://img.shields.io/badge/Enterprise-AI-purple)
 ![MIT License](https://img.shields.io/badge/License-MIT-brightgreen)
-![Multilingual](https://img.shields.io/badge/Multilingual-27%2B_Years-success)
-
-I build **production-ready Enterprise AI systems** using modern AI engineering practices, scalable backend architecture, secure authentication, cloud-native deployment, and Large Language Models (LLMs).
-
-Over the course of this portfolio, I designed and implemented **20 progressively advanced enterprise AI projects**, each building on the previous one to demonstrate real-world engineering capabilities rather than isolated tutorials.
-
-My long-term mission is to build **MedNavi AI**—an enterprise healthcare intelligence platform that empowers healthcare professionals across Southern Africa through secure, intelligent, multilingual AI solutions.
-
-## 🚀 Technical Expertise
-
-- 🤖 Enterprise AI Systems
-- 🏗️ AI Platform Engineering
-- 🧠 Large Language Models (LLMs)
-- 🤝 Multi-Agent AI Systems
-- 🔄 Retrieval-Augmented Generation (RAG)
-- ⚙️ Enterprise AI Gateways
-- 🔐 Enterprise Identity & Access Management
-- 🌐 FastAPI & REST API Development
-- 🐳 Docker & Containerized Deployments
-- ☁️ Cloud-Ready Architecture
-- 🧪 Automated Testing & Production Readiness
-- 📚 Technical Documentation & System Design
 
 ---
 
-## 💡 What You'll Find Here
+> **Designing production-ready Enterprise AI systems that combine Large Language Models, secure cloud-native architectures, intelligent automation, and scalable backend engineering.**
 
-This repository documents my progression from AI fundamentals to enterprise-grade AI engineering.
+Over the course of this portfolio I have designed, implemented and documented **20 progressively advanced Enterprise AI projects**, demonstrating practical expertise in:
 
-Each project demonstrates practical skills in:
-
-- Secure backend engineering
-- AI infrastructure
-- Enterprise architecture
-- API design
-- Authentication & authorization
-- Production deployment
-- Testing
-- Documentation
-- Cloud-ready engineering
-
-The projects are intentionally cumulative, reflecting how modern enterprise AI systems are designed and built in real-world environments.
-
----
-
-# 👨‍💻 Professional Profile
-
-I am a self-taught Enterprise AI Engineer focused on designing, building, documenting, testing, securing, and deploying production-ready AI systems.
-
-My engineering journey has been intentionally structured around progressively complex enterprise projects rather than isolated coding exercises. Each project builds on the previous one, demonstrating practical implementation of modern AI engineering principles including:
-
-- Enterprise AI Architecture
+- Enterprise AI Platforms
+- Large Language Models (LLMs)
 - AI Infrastructure Engineering
-- Large Language Model (LLM) Integration
+- Multi-Agent AI Systems
+- Retrieval-Augmented Generation (RAG)
+- Enterprise Authentication & Identity
+- API Gateway Architecture
+- FastAPI Backend Development
+- Docker & Cloud-Native Deployment
+- Production Documentation & System Architecture
+
+This repository reflects my transformation from learning AI engineering fundamentals to building **production-quality enterprise systems** using modern engineering practices.
+
+My long-term mission is to build **MedNavi AI**—an Enterprise Healthcare Intelligence Platform designed to improve healthcare delivery across Southern Africa through secure, multilingual, AI-powered clinical solutions.
+
+---
+
+# 👨‍💻 Executive Profile
+
+I am an **Enterprise AI Platform Engineer** focused on designing, developing, and deploying intelligent software systems powered by **Large Language Models (LLMs)**, secure backend architectures, and cloud-native engineering practices.
+
+My engineering philosophy is centered on building systems that are:
+
+- **Simple** to use
+- **Secure** by design
+- **Scalable** for enterprise adoption
+- **Reliable** in production
+- **Maintainable** through clean architecture and documentation
+
+Rather than learning AI through isolated tutorials, I have intentionally built a structured portfolio of **20 progressively advanced enterprise projects**, each introducing new concepts while reinforcing software engineering fundamentals such as modular architecture, authentication, testing, containerization, API design, workflow orchestration, and production readiness.
+
+My technical interests include:
+
+- Enterprise AI Platforms
+- Large Language Models (LLMs)
+- AI Infrastructure Engineering
 - Retrieval-Augmented Generation (RAG)
 - Multi-Agent Systems
-- Enterprise Authentication & Identity Management
-- AI API Gateways
-- Containerized Deployments
-- Production Testing
-- Technical Documentation
-- Cloud-Ready Software Engineering
+- AI API Gateway Architecture
+- Secure Identity & Access Management
+- Backend Engineering with FastAPI
+- Containerization with Docker
+- Cloud-Native AI Deployment
+- Production System Design
+- Technical Architecture Documentation
 
-My work emphasizes engineering discipline, maintainability, scalability, security, and production readiness.
+My long-term vision extends beyond engineering individual applications. I aim to contribute to the development of enterprise AI systems that solve meaningful real-world problems, particularly in healthcare across Southern Africa through **MedNavi AI**, while continuously growing toward roles in **Enterprise AI Infrastructure**, **LLM Engineering**, and **AI Systems Architecture**.
 
-Although my portfolio was built through independent engineering practice, every project reflects the architecture, workflows, and engineering standards used in modern enterprise software teams.
-
-I believe great AI systems are not built by prompting models alone—they are engineered through strong architecture, disciplined software development, secure infrastructure, and continuous improvement.
-
-# 🛣️ Enterprise AI Engineering Journey
-
-This repository documents a structured engineering journey from foundational AI development to enterprise-scale AI platform engineering.
-
-Rather than building unrelated projects, every week introduced new engineering concepts while reinforcing previous ones—mirroring how real-world enterprise software systems evolve.
-
----
-
-## Phase 1 — AI Engineering Foundations
-
-| Week | Project | Focus |
-|------|----------|----------------------------|
-| Week 1 | AI Summarizer | Hugging Face Transformers |
-| Week 2 | AI API | FastAPI REST APIs |
-| Week 3 | RAG Chatbot | Retrieval-Augmented Generation |
-| Week 4 | Conversational AI | Context-aware AI |
-| Week 5 | AI Agent | Autonomous AI Agents |
-| Week 6 | Workflow Engine | AI Orchestration |
-| Week 7 | Multi-Agent Orchestrator | Multi-Agent Systems |
-| Week 8 | LangGraph Workflow | Agent Workflows |
-| Week 9 | Enterprise Platform | Enterprise Architecture |
-| Week 10 | Multi-Agent Platform | Distributed AI Systems |
-
----
-
-## Phase 2 — Enterprise AI Infrastructure
-
-| Week | Project | Enterprise Focus |
-|------|----------|----------------------------------|
-| Week 11 | Memory RAG Platform | Long-Term AI Memory |
-| Week 12 | Vector RAG Platform | Vector Databases |
-| Week 13 | Enterprise RAG Platform | Enterprise Search |
-| Week 14 | Enterprise AI Gateway | AI Routing |
-| Week 15 | Enterprise AI Orchestrator | AI Coordination |
-| Week 16 | Enterprise Tool Calling Platform | Tool Integration |
-| Week 17 | Enterprise MCP Server | Model Context Protocol |
-| Week 18 | Enterprise Authentication Platform | Enterprise Security |
-| Week 19 | Enterprise Identity Platform | IAM & OAuth2 |
-| Week 20 | Enterprise AI Gateway | Enterprise AI Infrastructure |
-
----
-
-## Engineering Capabilities Acquired
-
-Throughout these projects I progressively developed practical experience with:
-
-- Enterprise Software Architecture
-- API Engineering
-- FastAPI
-- Docker
-- Authentication & Authorization
-- OAuth2
-- JWT
-- RBAC
-- Identity Platforms
-- Multi-Agent Systems
-- RAG Pipelines
-- LLM Integration
-- Prompt Engineering
-- Vector Search
-- AI Infrastructure
-- Gateway Design
-- Secure Enterprise APIs
-- Automated Testing
-- Documentation
-- Production Deployment
-
-This progression reflects how enterprise AI engineers continuously expand their capabilities by solving increasingly complex engineering problems.
+I believe that world-class engineers are distinguished not only by the technologies they know, but by the quality, reliability, and maintainability of the systems they build.
 
 ---
 
 # 🛠️ Enterprise Technology Stack
 
-## 🤖 Artificial Intelligence
+## Artificial Intelligence
 
-- OpenAI API
-- Hugging Face Transformers
-- Large Language Models (LLMs)
-- Prompt Engineering
-- Retrieval-Augmented Generation (RAG)
-- Vector Search
-- Multi-Agent AI Systems
-- LangGraph
-- LangChain
-- AI Workflow Orchestration
+| Technology | Experience |
+|------------|------------|
+| OpenAI API | ✅ Production Projects |
+| Large Language Models (LLMs) | ✅ |
+| Prompt Engineering | ✅ |
+| Retrieval-Augmented Generation (RAG) | ✅ |
+| LangChain | ✅ |
+| LangGraph | ✅ |
+| Hugging Face Transformers | ✅ |
+| AI Agents | ✅ |
+| Multi-Agent Systems | ✅ |
+| Enterprise AI Workflows | ✅ |
 
 ---
 
-## ⚙️ Backend Engineering
+## Backend Engineering
+
+| Technology | Experience |
+|------------|------------|
+| Python | ✅ Advanced |
+| FastAPI | ✅ Production APIs |
+| REST APIs | ✅ |
+| OAuth2 Authentication | ✅ |
+| JWT Security | ✅ |
+| Enterprise API Design | ✅ |
+| Pydantic | ✅ |
+| Uvicorn | ✅ |
+
+---
+
+## Infrastructure & DevOps
+
+| Technology | Experience |
+|------------|------------|
+| Docker | ✅ |
+| Docker Compose | ✅ |
+| Git | ✅ |
+| GitHub | ✅ |
+| CI/CD Fundamentals | ✅ |
+| Kubernetes | 🟡 Learning |
+| AWS Cloud | 🟡 Learning |
+| AI Infrastructure | ✅ Enterprise Portfolio |
+
+---
+
+## Data & Storage
+
+| Technology | Experience |
+|------------|------------|
+| PostgreSQL | ✅ |
+| Redis | ✅ |
+| Vector Databases | ✅ |
+| Supabase | ✅ |
+| Enterprise Data Architecture | ✅ |
+
+---
+
+## Enterprise Architecture
+
+| Technology | Experience |
+|------------|------------|
+| Identity & Access Management | ✅ |
+| API Gateway Architecture | ✅ |
+| Enterprise AI Platforms | ✅ |
+| System Architecture | ✅ |
+| Technical Documentation | ✅ |
+| Production Readiness | ✅ |
+
+---
+
+## Development Tools
+
+| Technology | Experience |
+|------------|------------|
+| VS Code | ✅ |
+| Git Bash | ✅ |
+| Pytest | ✅ |
+| Markdown Documentation | ✅ |
+| Draw.io Architecture Diagrams | ✅ |
+
+---
+
+---
+
+# 🎓 Professional Certifications & Continuous Learning
+
+I believe that exceptional AI engineers continuously invest in expanding their technical expertise. Alongside building practical systems, I actively pursue industry-recognized certifications to strengthen both my theoretical understanding and production engineering skills.
+
+## Artificial Intelligence
+
+- ✅ AWS Foundations of Prompt Engineering
+- ✅ Prompt Engineering for Large Language Models
+- ✅ Large Language Model (LLM) Engineering
+
+---
+
+## Cloud & Infrastructure
+
+- ✅ CompTIA Cloud Essentials
+- ✅ Docker Essentials
+- 🟡 Kubernetes (In Progress)
+- 🟡 AWS Cloud Engineering (In Progress)
+
+---
+
+## Backend Engineering
+
+- ✅ FastAPI Enterprise API Development
+- ✅ REST API Design
+- ✅ Enterprise Authentication & Authorization
+
+---
+
+## Data & AI Platforms
+
+- ✅ Redis Fundamentals
+- ✅ Retrieval-Augmented Generation (RAG)
+- ✅ LangChain
+- ✅ LangGraph
+
+---
+
+## Additional Professional Development
+
+- ✅ SEO Fundamentals (Semrush Academy)
+- ✅ Voiceover Training (Udemy)
+- ✅ Certificate in Translation & Interpretation Studies – University of Zimbabwe
+
+---
+
+## Learning Philosophy
+
+Technology evolves rapidly, particularly in Artificial Intelligence.
+
+My approach is therefore based on:
+
+- Continuous learning
+- Building production-ready projects
+- Studying enterprise software architecture
+- Applying new knowledge immediately through practical implementation
+
+Rather than collecting certifications alone, I use every course and certification to improve the quality, scalability, and reliability of the systems I build.
+
+---
+
+---
+
+# 🚀 Enterprise AI Portfolio Journey
+
+This repository is structured as a progressive engineering journey from AI fundamentals to enterprise-scale AI platform development.
+
+Rather than building unrelated demonstration projects, every project extends the previous one, introducing new architectural concepts, production engineering practices, and enterprise software design patterns.
+
+The result is a portfolio that demonstrates continuous engineering growth across the complete AI application lifecycle.
+
+## What This Portfolio Demonstrates
+
+Throughout these projects I have progressively implemented:
+
+- Enterprise REST APIs
+- Retrieval-Augmented Generation (RAG)
+- Vector Search
+- AI Memory Systems
+- Multi-Agent Orchestration
+- LangGraph Workflows
+- Enterprise Authentication & Authorization
+- Identity & Access Management
+- Enterprise AI Gateway Architecture
+- Model Context Protocol (MCP)
+- AI Infrastructure Components
+- Production Documentation
+- Automated Testing
+- Dockerized Deployments
+- Enterprise System Architecture
+
+Each project represents another layer of complexity while maintaining production-ready engineering practices.
+
+---
+
+## Engineering Progression
+
+### Phase 1 — AI Engineering Foundations
+
+Weeks **01–08**
+
+Focus:
 
 - Python
 - FastAPI
-- REST API Development
-- Pydantic
-- Uvicorn
-- Middleware Architecture
-- Modular Software Design
-
----
-
-## 🔐 Security & Identity
-
-- OAuth2
-- JWT Authentication
-- RBAC (Role-Based Access Control)
-- Enterprise Identity & Access Management (IAM)
-- API Keys
-- Authentication Middleware
-- Authorization Middleware
-- Session Management
-- Refresh Token Rotation
-
----
-
-## ☁️ Cloud & Infrastructure
-
-- Docker
-- Docker Compose
-- Containerized Applications
-- Enterprise AI Gateway
-- API Management
-- Production Deployment
-- Cloud-Ready Architecture
-
----
-
-## 📊 Data & AI Platforms
-
-- Vector Databases
-- Context Management
-- Enterprise Search
-- Knowledge Retrieval
-- AI Memory Systems
-- Enterprise MCP Server
-
----
-
-## 🧪 Engineering Practices
-
-- Git
-- GitHub
-- Automated Testing
-- Pytest
-- API Documentation
-- Swagger UI
-- System Architecture
-- Technical Documentation
-- Production Readiness
-
----
-
-## 🌍 Languages
-
-- English
-- Shona
-- isiZulu
-- isiXhosa
-
-Professional Translation & Interpretation Experience (1998 – Present)
-
----
-
-# 🌟 Featured Enterprise Projects
-
-These projects represent the progression from foundational AI engineering to enterprise-grade AI platform architecture.
-
-Each project was designed, implemented, documented, tested, version controlled, containerized where applicable, and prepared for production deployment.
-
----
-
-## 🚀 Week 20 — Enterprise AI Gateway & API Management
-
-**Enterprise AI Gateway for secure multi-provider AI routing**
-
-### Highlights
-
-- Enterprise API Gateway
-- Provider Abstraction Layer
-- Secure API Key Authentication
-- Enterprise Logging
-- Rate Limiting
-- Metrics Endpoint
-- AI Request Routing
-- Production-ready Architecture
-- Automated Testing
-
-**Technologies**
-
-Python • FastAPI • Docker • JWT • OAuth2 • Enterprise API Design
-
-➡️ **Repository:** `projects/week20-enterprise-ai-gateway`
-
----
-
-## 🔐 Week 19 — Enterprise Identity & Access Management Platform
-
-Enterprise Identity Server implementing secure authentication and authorization patterns used across modern enterprise AI systems.
-
-### Highlights
-
-- OAuth2
-- JWT Authentication
-- Refresh Tokens
-- Session Management
-- Identity Server
-- Protected APIs
-- Enterprise Middleware
-
-**Technologies**
-
-FastAPI • JWT • OAuth2 • Enterprise Security
-
-➡️ **Repository:** `projects/week19-enterprise-identity-platform`
-
----
-
-## 🔒 Week 18 — Enterprise Authentication Platform
-
-Enterprise authentication platform demonstrating secure API access using API keys, middleware, RBAC and enterprise request routing.
-
-### Highlights
-
-- Role-Based Access Control
-- API Key Authentication
-- Enterprise Middleware
-- Secure REST APIs
-- Automated Testing
-
-➡️ **Repository:** `projects/week18-enterprise-ai-auth-platform`
-
----
-
-## 🔌 Week 17 — Enterprise MCP Server
-
-Production-inspired implementation of the Model Context Protocol (MCP) for enterprise AI systems.
-
-### Highlights
-
-- MCP Server
-- Tool Registry
-- Prompt Registry
-- Context Management
-- Session Management
-- Enterprise Architecture
-
-➡️ **Repository:** `projects/week17-enterprise-mcp-server`
-
----
-
-## 🧠 Enterprise AI Platform Series (Weeks 9–16)
-
-This series progressively introduces enterprise AI engineering concepts.
-
-Projects include:
-
-- Enterprise Platform
-- Multi-Agent Platform
-- Memory RAG Platform
-- Vector RAG Platform
-- Enterprise RAG Platform
-- Enterprise AI Gateway
-- Enterprise AI Orchestrator
-- Enterprise Tool Calling Platform
-
-Together these projects demonstrate practical understanding of:
-
-- Retrieval-Augmented Generation (RAG)
-- Multi-Agent Systems
-- Vector Search
-- Enterprise APIs
-- Tool Calling
-- AI Infrastructure
-- AI Platform Engineering
-
----
-
-## 🤖 AI Engineering Foundations (Weeks 1–8)
-
-The first eight projects establish the engineering fundamentals that later evolve into enterprise AI systems.
-
-Topics include:
-
-- Transformers
-- FastAPI
-- AI APIs
-- Conversational AI
+- OpenAI APIs
+- LangChain
+- RAG
 - AI Agents
-- Workflow Engines
 - LangGraph
-- Orchestration
+- Workflow Design
 
-These projects demonstrate the progression from learning individual AI components to engineering complete AI platforms.
+Outcome:
 
----
-
-# 🏛️ Enterprise Engineering Philosophy
-
-Over the course of building these projects, I intentionally adopted an engineering-first mindset rather than focusing only on writing code.
-
-My goal is to build AI systems that are:
-
-- Secure
-- Scalable
-- Maintainable
-- Observable
-- Modular
-- Production Ready
-
-Rather than treating AI as isolated models, I view modern AI systems as distributed software platforms that require robust engineering across authentication, infrastructure, APIs, orchestration, deployment, monitoring, and governance.
+Build a strong foundation for modern AI application development.
 
 ---
 
-## Engineering Principles
+### Phase 2 — Enterprise AI Platforms
 
-Every project in this repository follows a consistent engineering philosophy.
+Weeks **09–20**
 
-### 🔹 Security by Design
+Focus:
 
-Security is integrated from the beginning—not added later.
+- Enterprise Platform Architecture
+- AI Infrastructure
+- Identity & Access Management
+- OAuth2 & JWT
+- API Gateway Design
+- Model Context Protocol (MCP)
+- Enterprise Security
+- Production Documentation
+- Deployment Readiness
 
-Examples include:
+Outcome:
 
-- OAuth2
-- JWT Authentication
-- RBAC
-- Enterprise Identity Management
-- Authentication Middleware
-- Authorization Middleware
-- API Gateway Protection
-- Secure Session Management
-
----
-
-### 🔹 Modular Architecture
-
-Projects are intentionally divided into clear layers.
-
-Typical structure includes:
-
-- API Layer
-- Core Business Logic
-- Services
-- Middleware
-- Security
-- Models
-- Documentation
-- Testing
-
-This makes systems easier to maintain, extend, and scale.
+Transition from AI developer to Enterprise AI Platform Engineer.
 
 ---
 
-### 🔹 Production Readiness
+## Why Twenty Projects?
 
-Every enterprise project emphasizes production engineering practices such as:
+Enterprise engineering cannot be learned from a single project.
 
-- Docker containerization
-- Automated testing
-- Health monitoring
-- Structured logging
-- Metrics endpoints
-- API documentation
-- Version control
-- Clean project organization
+Each week introduces one major concept while reinforcing everything built previously.
 
----
+This mirrors how enterprise software evolves in real organizations:
 
-### 🔹 Documentation as an Engineering Skill
+- Start simple.
+- Build incrementally.
+- Refactor continuously.
+- Improve architecture.
+- Increase scalability.
+- Strengthen security.
+- Prepare for production.
 
-I believe documentation is part of software engineering—not an afterthought.
-
-Each major project includes:
-
-- README
-- Architecture documentation
-- Architecture diagrams
-- Screenshots
-- API documentation
-- Testing evidence
-
-Good documentation reduces onboarding time, improves maintainability, and enables effective collaboration.
+That philosophy is reflected throughout this repository.
 
 ---
 
-### 🔹 Continuous Learning
+---
 
-This repository represents a continuous engineering journey.
+# 📂 Enterprise AI Project Index
 
-Each project builds upon previous work while introducing more advanced concepts and enterprise design patterns.
+The projects below document my progression from AI fundamentals to enterprise-scale AI platform engineering.
 
-Rather than memorizing frameworks, I focus on understanding why systems are designed the way they are and how those patterns solve real engineering problems.
+| Week | Project | Primary Technologies | Status | Key Competency |
+|------:|---------|----------------------|:------:|----------------|
+| **01** | [AI Summarizer](projects/week01-ai-summarizer/) | Python, Transformers | ✅ | NLP Foundations |
+| **02** | [AI API](projects/week02-ai-api/) | FastAPI, REST | ✅ | Backend APIs |
+| **03** | [RAG Chatbot](projects/week03-rag-chatbot/) | OpenAI, Vector Search | ✅ | Retrieval-Augmented Generation |
+| **04** | [Conversational AI](projects/week04-conversational-ai/) | FastAPI, LLMs | ✅ | Enterprise AI Applications |
+| **05** | [AI Agent](projects/week05-ai-agent/) | LangChain | ✅ | Autonomous AI Agents |
+| **06** | [Workflow Engine](projects/week06-workflow-engine/) | Python | ✅ | Workflow Automation |
+| **07** | [Multi-Agent Orchestrator](projects/week07-multi-agent-orchestrator/) | LangChain | ✅ | Multi-Agent Coordination |
+| **08** | [Enterprise LangGraph Workflow](projects/week08-langgraph-workflow/) | LangGraph | ✅ | Enterprise Workflow Orchestration |
+| **09** | [Enterprise AI Platform](projects/week09-enterprise-platform/) | FastAPI, Docker | ✅ | Platform Architecture |
+| **10** | [Multi-Agent Platform](projects/week10-multi-agent-platform/) | LangGraph | ✅ | Distributed AI Systems |
+| **11** | [Memory & RAG Platform](projects/week11-memory-rag-platform/) | Redis, RAG | ✅ | AI Memory Systems |
+| **12** | [Vector RAG Platform](projects/week12-vector-rag-platform/) | Embeddings, Vector DB | ✅ | Semantic Search |
+| **13** | [Enterprise RAG Platform](projects/week13-enterprise-rag-platform/) | LangChain, FastAPI | ✅ | Enterprise Knowledge Systems |
+| **14** | [Enterprise AI Gateway](projects/week14-enterprise-ai-gateway/) | FastAPI | ✅ | API Gateway Architecture |
+| **15** | [Enterprise AI Orchestrator](projects/week15-enterprise-ai-orchestrator/) | LangGraph | ✅ | AI Orchestration |
+| **16** | [Enterprise Tool Calling Platform](projects/week16-enterprise-tool-calling-platform/) | OpenAI Tools | ✅ | Tool Calling |
+| **17** | [Enterprise MCP Server](projects/week17-enterprise-mcp-server/) | MCP | ✅ | Model Context Protocol |
+| **18** | [Enterprise AI Authentication Platform](projects/week18-enterprise-ai-auth-platform/) | OAuth2, JWT | ✅ | Enterprise Security |
+| **19** | [Enterprise Identity Platform](projects/week19-enterprise-identity-platform/) | Identity Management | ✅ | Identity & Access Management |
+| **20** | [Enterprise AI Gateway & API Management](projects/week20-enterprise-ai-gateway/) | API Gateway | ✅ | Enterprise AI Infrastructure |
 
 ---
 
-## My Engineering Mindset
+## 📊 Portfolio Summary
 
-I strive to build software that I would be confident deploying into production environments.
+| Metric | Value |
+|--------|------:|
+| Enterprise AI Projects | **20** |
+| Production APIs Built | **20+** |
+| Enterprise Architecture Documents | **20** |
+| Dockerized Applications | **15+** |
+| Authentication Systems | **3** |
+| Multi-Agent Systems | **4** |
+| LangGraph Workflows | **3** |
+| Enterprise Gateways | **2** |
+| GitHub Commits | **300+** |
+| Portfolio Status | **Complete** ✅ |
 
-My focus is not only on making software work, but on making it:
+## 📁 Repository Structure
 
-- understandable,
-- reliable,
-- secure,
-- testable,
-- scalable,
-- maintainable.
+```text
+ai-engineer-journey/
+│
+├── projects/
+│   ├── week01-ai-summarizer/
+│   ├── week02-ai-api/
+│   ├── week03-rag-chatbot/
+│   ├── ...
+│   ├── week20-enterprise-ai-gateway/
+│
+├── certificates/
+├── resources/
+├── notes/
+├── images/
+└── README.md
+```
 
-That mindset guides every project in this portfolio.
+Every project contains:
 
----
-
-# 🏛️ Enterprise Engineering Philosophy
-
-Over the course of building these projects, I intentionally adopted an engineering-first mindset rather than focusing only on writing code.
-
-My goal is to build AI systems that are:
-
-- Secure
-- Scalable
-- Maintainable
-- Observable
-- Modular
-- Production Ready
-
-Rather than treating AI as isolated models, I view modern AI systems as distributed software platforms that require robust engineering across authentication, infrastructure, APIs, orchestration, deployment, monitoring, and governance.
-
----
-
-## Engineering Principles
-
-Every project in this repository follows a consistent engineering philosophy.
-
-### 🔹 Security by Design
-
-Security is integrated from the beginning—not added later.
-
-Examples include:
-
-- OAuth2
-- JWT Authentication
-- RBAC
-- Enterprise Identity Management
-- Authentication Middleware
-- Authorization Middleware
-- API Gateway Protection
-- Secure Session Management
+- ✅ Production-ready source code
+- ✅ Professional project README
+- ✅ Architecture documentation
+- ✅ Draw.io system diagrams
+- ✅ Screenshots and demonstrations
+- ✅ Enterprise folder organization
+- ✅ Testing where applicable
 
 ---
 
-### 🔹 Modular Architecture
-
-Projects are intentionally divided into clear layers.
-
-Typical structure includes:
-
-- API Layer
-- Core Business Logic
-- Services
-- Middleware
-- Security
-- Models
-- Documentation
-- Testing
-
-This makes systems easier to maintain, extend, and scale.
-
 ---
 
-### 🔹 Production Readiness
+# 🩺 Flagship Project — MedNavi AI
 
-Every enterprise project emphasizes production engineering practices such as:
-
-- Docker containerization
-- Automated testing
-- Health monitoring
-- Structured logging
-- Metrics endpoints
-- API documentation
-- Version control
-- Clean project organization
-
----
-
-### 🔹 Documentation as an Engineering Skill
-
-I believe documentation is part of software engineering—not an afterthought.
-
-Each major project includes:
-
-- README
-- Architecture documentation
-- Architecture diagrams
-- Screenshots
-- API documentation
-- Testing evidence
-
-Good documentation reduces onboarding time, improves maintainability, and enables effective collaboration.
-
----
-
-### 🔹 Continuous Learning
-
-This repository represents a continuous engineering journey.
-
-Each project builds upon previous work while introducing more advanced concepts and enterprise design patterns.
-
-Rather than memorizing frameworks, I focus on understanding why systems are designed the way they are and how those patterns solve real engineering problems.
-
----
-
-## My Engineering Mindset
-
-I strive to build software that I would be confident deploying into production environments.
-
-My focus is not only on making software work, but on making it:
-
-- understandable,
-- reliable,
-- secure,
-- testable,
-- scalable,
-- maintainable.
-
-That mindset guides every project in this portfolio.
-
----
-
-# 🩺 MedNavi AI — My Long-Term Mission
-
-Every project in this repository contributes toward a much larger vision.
-
-My long-term mission is to design, build, and deploy **MedNavi AI**—an enterprise healthcare intelligence platform that empowers healthcare professionals through secure, multilingual, AI-powered clinical workflows.
-
-Rather than building isolated AI applications, I am intentionally developing the engineering foundation required to support an enterprise healthcare platform capable of operating at scale across Southern Africa and beyond.
-
----
+> **Simple. Lovable. Complete.**
 
 ## Vision
 
-MedNavi AI aims to simplify and modernize healthcare administration while allowing clinicians to spend more time caring for patients.
+MedNavi AI is an Enterprise Healthcare Intelligence Platform that I am building to empower healthcare professionals across Southern Africa through secure, multilingual, AI-powered clinical solutions.
 
-The platform is being designed around three principles:
+The platform combines modern Large Language Models (LLMs), enterprise backend engineering, intelligent workflow automation, and cloud-native infrastructure to improve clinical efficiency while reducing administrative burden.
 
-- Simplicity
-- Intelligence
-- Trust
+Rather than functioning as a simple chatbot, MedNavi AI is being designed as a complete AI platform capable of supporting healthcare professionals throughout the patient journey.
 
 ---
 
-## Planned Enterprise Capabilities
+## Core Capabilities
 
-### 🎤 AI Clinical Documentation
+### 🩺 AI Medical Scribe
 
-- Voice-to-SOAP Notes
-- Clinical Summaries
-- Consultation Documentation
-- Medical Dictation
-
----
-
-### 🧠 Clinical Decision Support
-
-- AI-assisted clinical reasoning
-- Symptom triage
-- Differential diagnosis assistance
-- Medical knowledge retrieval (RAG)
+- Voice-to-SOAP clinical documentation
+- Automated consultation summaries
+- Structured medical note generation
 
 ---
 
-### 🌍 Multilingual Healthcare
+### 📋 Clinical Documentation
 
-Healthcare professionals across Southern Africa work in multilingual environments.
+- AI-generated consultation notes
+- Referral letters
+- Follow-up summaries
+- Clinical reporting
 
-MedNavi AI is designed to support:
+---
+
+### 🔎 Retrieval-Augmented Generation (RAG)
+
+- Secure medical knowledge retrieval
+- Clinical guideline search
+- Context-aware AI assistance
+
+---
+
+### 🌍 Multilingual Healthcare AI
+
+Supporting communication across multiple Southern African languages.
+
+Languages include:
 
 - English
+- Shona
 - isiZulu
 - isiXhosa
 - Sesotho
-- Shona
 - Northern Ndebele
 
-with future expansion into additional African languages.
+---
+
+### 🤖 Clinical Decision Support
+
+Future capabilities include:
+
+- Differential diagnosis assistance
+- Treatment guideline support
+- Medication information retrieval
+- Clinical workflow recommendations
 
 ---
 
-### 🏥 Enterprise Clinic Platform
+### ☁ Enterprise SaaS Platform
 
-Future modules include:
+Designed with enterprise architecture principles including:
 
-- Patient Intake
-- Smart Scheduling
-- Appointment Reminders
-- Digital Medical Records
-- Referral Management
-- Prescription Assistance
-- Pharmacy Communication
-- Ward Handover Support
-
----
-
-### 🔐 Enterprise Security
-
-Healthcare systems require strong protection.
-
-The platform is being engineered with:
-
-- Enterprise Identity Management
-- OAuth2
-- RBAC
-- JWT Authentication
-- Secure API Gateways
-- Session Management
-- Audit Logging
+- Secure authentication
+- Role-based access control
+- Enterprise API Gateway
+- AI orchestration
+- Multi-clinic scalability
+- Cloud-native deployment
+- Production monitoring
+- Audit logging
 
 ---
 
-### 🤖 Multi-Agent AI
-
-Future versions of MedNavi AI will leverage specialized AI agents working together to support healthcare professionals.
-
-Examples include:
-
-- Documentation Agent
-- Scheduling Agent
-- Knowledge Retrieval Agent
-- Translation Agent
-- Clinical Workflow Agent
-
-These agents will collaborate through secure orchestration while maintaining human oversight.
-
----
-
-## Why This Matters
-
-Healthcare professionals face increasing administrative workloads that reduce valuable patient interaction time.
-
-My goal is to use enterprise AI engineering to reduce repetitive documentation, improve workflow efficiency, and make advanced healthcare technology more accessible across Southern Africa.
-
-Technology should support clinicians—not replace them.
-
----
-
-## Current Status
-
-This GitHub repository represents the engineering foundation behind MedNavi AI.
-
-Each completed project develops a capability that will ultimately become part of the MedNavi AI platform.
-
-As my engineering experience grows, MedNavi AI will evolve from a prototype into a secure, scalable, enterprise healthcare platform designed for real-world clinical environments.
-
----
-
-# 👨‍💼 Professional Experience & Certifications
-
-My professional journey combines decades of multilingual communication, real-world problem solving, and modern AI engineering.
-
-Rather than following a traditional software engineering path, I have intentionally transitioned into Artificial Intelligence by combining extensive practical experience with disciplined self-learning and hands-on engineering projects.
-
-Today, I design and build enterprise AI systems with a strong emphasis on secure architecture, production readiness, and scalable platform engineering.
-
----
-
-## 🌍 Professional Background
-
-### Multilingual Translation & Interpretation
-
-**1998 – Present (27+ Years)**
-
-For more than two decades, I have worked in multilingual communication across Southern Africa.
-
-This experience strengthened my ability to:
-
-- communicate complex information clearly,
-- understand context across multiple languages,
-- solve real-world communication challenges,
-- work with accuracy under pressure,
-- collaborate with diverse teams.
-
-These skills now directly support my work in:
-
-- Large Language Models (LLMs)
-- Retrieval-Augmented Generation (RAG)
-- Prompt Engineering
-- Multilingual AI Systems
-- Enterprise AI Applications
-
----
-
-## 🏗️ AI Engineering Journey
-
-Beginning as a self-taught AI engineer, I am committed to learning through practical implementation rather than passive study.
-
-Instead of completing isolated tutorials, I designed and built an enterprise portfolio consisting of progressively more advanced projects covering:
-
-- AI APIs
-- Conversational AI
-- AI Agents
-- Workflow Engines
-- Multi-Agent Systems
-- Enterprise Authentication
-- Identity & Access Management
-- API Gateways
-- Enterprise AI Infrastructure
-
-This portfolio demonstrates my ability to transform concepts into production-inspired systems.
-
----
-
-## 📜 Certifications
+## Technology Stack
 
 ### Artificial Intelligence
 
-- AWS Foundations of Prompt Engineering
-- Prompt Engineering for ChatGPT
-- LLM Engineering Fundamentals
-
-### Cloud & Infrastructure
-
-- CompTIA Cloud Essentials
-
-### Software Engineering
-
-- Docker Essentials
-- FastAPI Development
-- Git & GitHub Version Control
-
-### Digital Skills
-
-- SEO Certification (Semrush Academy)
-- Voiceover Training (Udemy)
-
-I continue to invest in structured learning while prioritizing practical implementation.
-
----
-
-## 💻 Technologies
-
-### Programming
-
-- Python
+- OpenAI
+- LangChain
+- LangGraph
+- Retrieval-Augmented Generation (RAG)
+- AI Agents
+- Prompt Engineering
 
 ### Backend
 
 - FastAPI
+- Python
+- PostgreSQL
+- Redis
 - REST APIs
-
-### Artificial Intelligence
-
-- OpenAI API
-- Hugging Face Transformers
-- LangChain
-- RAG Systems
-- Multi-Agent Architectures
-- Prompt Engineering
 
 ### Infrastructure
 
 - Docker
-- Git
-- GitHub
-
-### Enterprise Security
-
-- OAuth2
-- JWT
-- RBAC
-- API Gateways
-- Enterprise Authentication
-
----
-
-## 🌱 Continuous Improvement
-
-Technology evolves rapidly.
-
-My commitment is not only to stay current, but to continuously deepen my understanding of enterprise AI engineering, cloud infrastructure, and production system design.
-
-Every completed project becomes the foundation for the next.
-
-Learning never stops.
-
----
-
-# 🎯 Career Objectives
-
-I am actively building my career around Enterprise Artificial Intelligence Engineering with a long-term focus on designing secure, scalable, production-ready AI platforms.
-
-My objective is to contribute to organizations solving complex real-world problems through modern AI systems while continuously expanding my expertise in enterprise software architecture and cloud-native AI infrastructure.
-
----
-
-## Roles I Am Targeting
-
-I am particularly interested in opportunities such as:
-
-- Enterprise AI Engineer
-- AI Platform Engineer
-- LLM Engineer
-- Generative AI Engineer
-- AI Infrastructure Engineer
-- AI Backend Engineer
-- AI Solutions Engineer
-- Applied AI Engineer
-- MLOps Engineer
-- AI Systems Engineer
-
----
-
-## Industries
-
-I am especially passionate about applying AI within industries such as:
-
-- Healthcare
-- Financial Services
-- Insurance
-- Telecommunications
-- Education
-- Enterprise Software
-- Government Digital Transformation
-- Logistics & Supply Chain
-
----
-
-## What I Bring
-
-I combine:
-
-- Enterprise engineering principles
-- Practical AI implementation
-- Strong backend development
-- Secure API architecture
-- Production-ready software engineering
-- Multilingual communication expertise
-- Continuous self-learning
-- A long-term product mindset
-
-Rather than focusing only on models, I enjoy designing complete AI platforms that integrate infrastructure, security, APIs, orchestration, and user experience into reliable production systems.
+- Kubernetes (Planned)
+- Cloud Deployment
+- Enterprise Identity Platform
+- Enterprise AI Gateway
 
 ---
 
 ## Long-Term Vision
 
-My long-term goal is to become a globally recognized Enterprise AI Architect capable of designing intelligent platforms that operate securely and reliably at scale.
+MedNavi AI is intended to become an enterprise healthcare platform serving:
 
-Everything in this repository contributes toward that objective.
+- Private Practices
+- Medical Specialists
+- Hospitals
+- Healthcare Groups
+- Clinics
+- Medical Training Institutions
 
-As my experience grows, so will the scope and sophistication of the systems I build, culminating in the continued development of **MedNavi AI** and other enterprise-grade AI platforms that create meaningful impact.
-
----
-
-# 📊 GitHub Statistics
-
-<p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=mnzirain&show_icons=true&theme=tokyonight" height="170"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mnzirain&layout=compact&theme=tokyonight" height="170"/>
-
-</p>
+The long-term objective is to provide intelligent clinical assistance that improves patient care while reducing administrative workload for healthcare professionals.
 
 ---
 
-# 🔥 GitHub Contribution Activity
+## Current Status
 
-<p align="center">
+**Active Development**
 
-<img src="https://streak-stats.demolab.com?user=mnzirain&theme=tokyonight"/>
+The enterprise engineering skills demonstrated throughout this repository are intentionally being applied toward the development of MedNavi AI.
 
-</p>
-
----
-
-# 🚀 Enterprise AI Portfolio Metrics
-
-## Current Portfolio
-
-- ✅ 20 Enterprise AI Engineering Projects
-- ✅ 200+ Git Commits
-- ✅ Enterprise Documentation
-- ✅ Production-inspired Architecture
-- ✅ Automated Testing
-- ✅ Docker-ready Deployments
-- ✅ Secure Authentication Platforms
-- ✅ Enterprise API Gateways
-- ✅ AI Infrastructure Engineering
-- ✅ LLM Engineering
-- ✅ Multi-Agent Systems
-- ✅ Retrieval-Augmented Generation (RAG)
+Every completed project contributes directly to the architecture, infrastructure, security, scalability, and production readiness of the platform.
 
 ---
 
-# 🌍 Languages
+---
 
-- 🇬🇧 English
-- 🇿🇼 Shona
-- 🇿🇦 isiZulu
-- 🇿🇦 isiXhosa
-- 🇿🇦 Sesotho
-- 🇿🇼 Northern Ndebele
+# 🏛️ Enterprise Engineering Philosophy
+
+Technology alone does not build enterprise systems.
+
+Successful enterprise software is the result of disciplined engineering practices that prioritize reliability, maintainability, security, and long-term scalability.
+
+Throughout this portfolio, every project has been built with the following principles in mind.
 
 ---
 
-# 📫 Connect With Me
+## 🧩 Build Systems, Not Scripts
 
-## GitHub
+Rather than writing isolated programs, I focus on building complete systems composed of modular, reusable, and well-documented components.
 
-https://github.com/mnzirain
+Every project emphasizes:
 
-## LinkedIn
-
-www.linkedin.com/in/
-mike-n-48a56354
-
-## Portfolio
-
-*(Coming Soon)*
-
-## MedNavi AI
-
-Currently under active development.
+- Clear separation of responsibilities
+- Reusable architecture
+- Maintainable codebases
+- Enterprise project organization
 
 ---
 
-# 🤝 Open To
+## 🔐 Security by Design
 
-I am open to opportunities involving:
+Enterprise AI systems must be secure before they are intelligent.
 
-- Enterprise AI Engineering
+My projects progressively introduce:
+
+- OAuth2 Authentication
+- JWT Authorization
+- API Key Management
+- Role-Based Access Control (RBAC)
+- Identity & Access Management
+- Enterprise Security Layers
+
+Security is treated as a foundational engineering requirement—not an afterthought.
+
+---
+
+## ⚙️ Scalable Architecture
+
+Every project is designed with future growth in mind.
+
+Engineering decisions prioritize:
+
+- Modular architecture
+- Service separation
+- API-first design
+- Stateless services
+- Cloud-native deployment
+- Infrastructure portability
+
+This approach enables systems to evolve without extensive redesign.
+
+---
+
+## 🤖 AI with Engineering Discipline
+
+Artificial Intelligence becomes valuable when combined with strong software engineering.
+
+Throughout this portfolio I integrate AI into production-oriented systems using:
+
+- Large Language Models (LLMs)
+- Retrieval-Augmented Generation (RAG)
+- AI Agents
+- Multi-Agent Workflows
+- Enterprise AI Gateways
+- Model Context Protocol (MCP)
+
+The objective is not simply to demonstrate AI capabilities, but to build intelligent systems that are reliable enough for real-world use.
+
+---
+
+## 🧪 Quality Through Testing
+
+Reliable software requires continuous validation.
+
+Projects include:
+
+- Automated testing
+- API validation
+- Error handling
+- Production logging
+- Defensive programming
+- Structured debugging
+
+Quality is measured not only by successful execution, but by predictable behavior under changing conditions.
+
+---
+
+## 📚 Documentation as Engineering
+
+Well-designed software should remain understandable long after it is written.
+
+Each project includes professional documentation such as:
+
+- Architecture diagrams
+- Technical documentation
+- Project READMEs
+- API documentation
+- Folder organization
+- Engineering notes
+
+Documentation is treated as an integral part of software engineering rather than a final step.
+
+---
+
+## 🌍 Solving Real Problems
+
+The purpose of engineering is to create practical solutions that improve people's lives.
+
+Every project in this repository contributes toward that goal, ultimately supporting the development of **MedNavi AI**, an enterprise healthcare intelligence platform designed to improve healthcare delivery across Southern Africa.
+
+---
+
+## 🎯 Continuous Improvement
+
+Engineering excellence is not achieved through isolated achievements but through consistent improvement.
+
+This portfolio represents an ongoing commitment to:
+
+- Continuous learning
+- Building increasingly sophisticated systems
+- Refining engineering practices
+- Applying feedback
+- Solving progressively larger problems
+
+My objective is not simply to become an AI engineer, but to grow into an engineer capable of designing, building, and leading enterprise AI platforms that create lasting value.
+
+---
+
+---
+
+# 👤 Professional Background
+
+My professional journey combines over **27 years of multilingual communication expertise** with modern enterprise software engineering and Artificial Intelligence development.
+
+This unique combination allows me to approach AI systems not only as software, but as tools that improve communication, decision-making, and real-world business processes.
+
+---
+
+## 🌍 Language & Communication Expertise
+
+For more than two decades I have worked in multilingual environments requiring precision, cultural awareness, and clear communication.
+
+Highlights include:
+
+- 27+ years of Translation & Interpretation
+- Professional multilingual communication
+- Cross-cultural collaboration
+- Technical document translation
+- Public communication
+- Training and knowledge transfer
+
+Languages include:
+
+- English
+- Shona
+- isiZulu
+- isiXhosa
+- Sesotho
+- Northern Ndebele
+
+This experience naturally aligns with the development of multilingual AI systems such as **MedNavi AI**.
+
+---
+
+## 💼 Entrepreneurship
+
+Beyond software engineering, I have built experience operating and managing businesses in South Africa.
+
+These experiences strengthened my understanding of:
+
+- Customer needs
+- Operational efficiency
+- Business processes
+- Problem solving
+- Service delivery
+- Product thinking
+
+As a result, I build software with business value in mind rather than technology alone.
+
+---
+
+## 🤖 Transition into AI Engineering
+
+Driven by a passion for solving complex problems through technology, I committed myself to mastering modern AI engineering through disciplined, project-based learning.
+
+Rather than following isolated tutorials, I designed and completed a structured portfolio of **20 progressively advanced enterprise AI projects**, covering topics such as:
+
+- Enterprise AI Platforms
+- Large Language Models (LLMs)
+- Retrieval-Augmented Generation (RAG)
+- Multi-Agent Systems
+- FastAPI
+- Docker
+- Identity & Access Management
+- Enterprise API Gateways
+- Production System Design
+
+Each project introduced increasingly advanced engineering concepts while reinforcing software engineering best practices.
+
+---
+
+## 📈 Professional Growth
+
+My engineering journey reflects continuous improvement through:
+
+- Practical project development
+- Industry certifications
+- Technical documentation
+- Enterprise architecture
+- Cloud-native engineering
+- Modern AI technologies
+
+I believe sustained growth comes from consistently building, improving, documenting, and refining systems over time.
+
+---
+
+## 🎯 Career Objective
+
+I am pursuing opportunities where I can contribute to the design, development, and deployment of enterprise AI platforms while continuing to grow in areas such as:
+
+- Enterprise AI Infrastructure
 - LLM Engineering
 - AI Platform Engineering
-- AI Infrastructure Engineering
-- Backend AI Engineering
-- MLOps
-- Generative AI
-- Enterprise Software Engineering
+- AI Systems Architecture
+- Healthcare Artificial Intelligence
 
-I also welcome collaboration on impactful AI projects, open-source initiatives, and healthcare AI innovation.
+My long-term vision is to help build intelligent systems that improve people's lives while contributing to the advancement of enterprise AI across Africa.
 
 ---
 
-# ⭐ If You Like This Repository
+# 📅 Professional Timeline
 
-If these projects helped you, inspired you, or demonstrated useful engineering approaches:
-
-⭐ Star the repository
-
-🍴 Fork the repository
-
-🤝 Connect with me
-
-Let's build the future of Enterprise AI together.
-
----
-
-# 🌟 My Engineering Mission
-
-Technology should solve real human problems.
-
-Every project in this repository represents another step toward becoming a world-class Enterprise AI Engineer capable of designing secure, scalable, production-ready AI systems that improve lives.
-
-My journey has been built through discipline, continuous learning, and thousands of hours of practical engineering.
-
-This portfolio is more than a collection of projects.
-
-It is evidence of persistence, growth, and a commitment to engineering excellence.
+| Year | Milestone |
+|------|-----------|
+| **1998–Present** | Professional Translation & Interpretation across multiple Southern African languages |
+| **2012** | Earned Certificate in Translation & Interpretation Studies – University of Zimbabwe |
+| **2024** | Began intensive transition into Artificial Intelligence and Enterprise Software Engineering |
+| **2024–2025** | Completed industry certifications in Prompt Engineering, Docker, Redis, Cloud Technologies, and AI Engineering |
+| **2025–Present** | Designed and built a structured portfolio of **20 enterprise AI engineering projects** covering APIs, RAG, AI Agents, LangGraph, Identity & Access Management, Enterprise AI Gateways, and Production Systems |
+| **Present** | Building **MedNavi AI**, an Enterprise Healthcare Intelligence Platform for Southern Africa |
+| **Future Vision** | Grow into an Enterprise AI Architect and founder of globally impactful AI platforms serving healthcare and other industries |
 
 ---
 
-# 🚀 What's Next
+---
 
-The journey continues.
+# 🚀 Section 10 — Engineering Roadmap & Future Vision
 
-Current focus areas include:
+## 🌍 Long-Term Vision
 
-- Enterprise Multi-Agent AI Systems
-- Advanced LLM Infrastructure
-- AI Platform Engineering
-- Cloud-Native AI Deployments
+My goal extends beyond becoming an AI Engineer.
+
+I am intentionally developing the technical depth, architectural thinking, and engineering discipline required to design, build, and lead enterprise-scale Artificial Intelligence platforms that solve meaningful real-world problems.
+
+I aspire to become an:
+
+- 🏗️ Enterprise AI Platform Engineer
+- 🧠 Large Language Model (LLM) Engineer
+- ☁️ AI Infrastructure Engineer
+- 🏛️ Enterprise AI Architect
+- 🚀 AI Founder and Technology Leader
+
+---
+
+## 📈 Current Engineering Focus
+
+My learning roadmap is centered on mastering the technologies that power modern enterprise AI systems:
+
+### Enterprise AI Engineering
+
+- Enterprise AI Platforms
+- Large Language Models (LLMs)
+- AI Infrastructure
+- Multi-Agent Systems
+- Enterprise API Gateways
+- Identity & Access Management
+
+### Backend Engineering
+
+- FastAPI
+- Python
+- PostgreSQL
+- Redis
+- REST APIs
+- Microservices
+
+### Cloud & Infrastructure
+
+- Docker
 - Kubernetes
-- Distributed AI Systems
-- Enterprise Observability
-- Production MLOps
-- AI Security
-- MedNavi AI
+- Cloud Deployment
+- CI/CD Pipelines
+- Observability & Monitoring
 
-Each new project builds toward the long-term vision of creating AI systems that operate reliably, securely, and at enterprise scale.
+### Artificial Intelligence
 
----
-
-# 💬 A Personal Note
-
-I began this journey as a self-taught engineer with a vision and a willingness to learn.
-
-Today, I design, build, secure, document, test, containerize, and deploy enterprise-inspired AI platforms.
-
-Tomorrow, I will continue learning, improving, and building systems that make a meaningful difference.
-
-This repository documents that journey—one project at a time.
+- LangChain
+- LangGraph
+- Retrieval-Augmented Generation (RAG)
+- Model Context Protocol (MCP)
+- AI Agents
+- Prompt Engineering
 
 ---
 
-> *"Success is built one commit, one lesson, one project, and one day at a time."*
+## 🩺 Building Toward MedNavi AI
 
-Thank you for visiting my portfolio.
+Every project in this repository contributes toward the long-term development of **MedNavi AI**, my flagship Enterprise Healthcare Intelligence Platform.
 
-If you'd like to collaborate, discuss AI, or build something meaningful together, feel free to connect.
+The portfolio demonstrates the engineering foundations required to support:
 
-**Let's build the future of Enterprise AI.**
+- Enterprise AI Architecture
+- Secure Clinical Systems
+- Scalable Healthcare Platforms
+- Multilingual AI Solutions
+- Intelligent Clinical Decision Support
+
+Each completed project is another building block toward making that vision a reality.
+
+---
+
+## 🤝 Open to Opportunities
+
+I am actively seeking opportunities where I can contribute to enterprise AI projects while continuing to grow alongside experienced engineering teams.
+
+Areas of interest include:
+
+- Enterprise AI Engineering
+- AI Platform Engineering
+- LLM Engineering
+- AI Infrastructure
+- MLOps
+- Backend Engineering
+- Healthcare AI
+
+I believe in continuous learning, collaborative engineering, and building technology that creates measurable impact.
+
+---
+
+## ⭐ Final Thoughts
+
+This repository is more than a collection of projects.
+
+It is a record of disciplined learning, consistent execution, and continuous improvement.
+
+Every project reflects my commitment to becoming a world-class AI engineer capable of building secure, scalable, production-ready enterprise systems.
+
+Thank you for taking the time to explore my work.
+
+I hope this portfolio demonstrates not only what I have built, but also the engineer I am becoming.
+
+---
+
+> **"Learning AI by Building AI. Engineering AI for Real-World Impact."**

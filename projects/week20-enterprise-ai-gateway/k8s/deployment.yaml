@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: enterprise-ai-gateway
+  namespace: enterprise-ai
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: enterprise-ai-gateway
+
+  template:
+    metadata:
+      labels:
+        app: enterprise-ai-gateway
+
+    spec:
+      containers:
+        - name: enterprise-ai-gateway
+          image: enterprise-ai-gateway:latest
+          imagePullPolicy: Never
+
+          ports:
+            - containerPort: 8000
+
+          envFrom:
+            - configMapRef:
+                name: enterprise-ai-config
+
+            - secretRef:
+                name: enterprise-ai-secret
+
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 20

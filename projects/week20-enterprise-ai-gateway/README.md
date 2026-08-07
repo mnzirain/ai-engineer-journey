@@ -356,3 +356,79 @@ This portfolio demonstrates practical implementation of enterprise AI architectu
 ---
 
 © 2026 Mike Nzirainengwe
+---
+
+# ☸️ Kubernetes Deployment
+
+Week 20 is deployed and verified on a local Kubernetes cluster running through Docker Desktop.
+
+## Deployment Architecture
+
+```text
+Client
+  │
+  ▼
+NodePort :31142
+  │
+  ▼
+enterprise-ai-service :80
+  │
+  ▼
+Enterprise AI Gateway Pod :8000
+  │
+  ▼
+FastAPI /health
+```
+
+## Kubernetes Resources
+
+- Namespace: `enterprise-ai`
+- Deployment: `enterprise-ai-gateway`
+- Service: `enterprise-ai-service`
+- Service type: `NodePort`
+- Application port: `8000`
+- Kubernetes service port: `80`
+- Local NodePort: `31142`
+- Configuration: ConfigMap
+- Secrets: Kubernetes Secret
+- Health checks: HTTP readiness and liveness probes
+
+## Deployment Verification
+
+The workload was successfully verified with:
+
+```bash
+kubectl get deployment,pods,service -n enterprise-ai
+```
+
+The Gateway reached `1/1 Running` and Kubernetes successfully executed repeated HTTP health checks against `/health`, receiving HTTP `200 OK` responses.
+
+The Kubernetes Service was also verified through the NodePort:
+
+```bash
+curl http://localhost:31142/health
+curl http://localhost:31142/
+curl http://localhost:31142/providers
+curl http://localhost:31142/models
+```
+
+Verified API capabilities include:
+
+- Health monitoring
+- Gateway service status
+- Multi-provider registry
+- Model registry
+
+## Infrastructure Evidence
+
+![Kubernetes Deployment](screenshots/kubernetes-deployment-running.png)
+
+![Kubernetes Infrastructure Overview](screenshots/kubernetes-infrastructure-overview.png)
+
+![Kubernetes Gateway API Tests](screenshots/kubernetes-gateway-api-tests.png)
+
+## Engineering Significance
+
+This milestone demonstrates the transition from containerized AI application development to cloud-native workload deployment. The Gateway is packaged as a Docker image, deployed as a Kubernetes workload, exposed through a Kubernetes Service, and monitored through readiness and liveness probes.
+
+The deployment provides a foundation for future work involving horizontal scaling, ingress, observability, secrets management, resource limits, autoscaling, and production cloud deployment.

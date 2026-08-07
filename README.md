@@ -900,3 +900,47 @@ I hope this portfolio demonstrates not only what I have built, but also the engi
 ---
 
 > **"Learning AI by Building AI. Engineering AI for Real-World Impact."**
+---
+
+# ☸️ Week 20 Infrastructure Milestone
+
+## Enterprise AI Gateway → Kubernetes
+
+Week 20 marks an important transition in the AI Engineer Journey from enterprise AI application development into practical AI infrastructure engineering.
+
+The Enterprise AI Gateway was successfully:
+
+- Built as a Python 3.13 FastAPI application
+- Containerized with Docker
+- Deployed to a local Kubernetes cluster through Docker Desktop
+- Configured using Kubernetes ConfigMaps and Secrets
+- Exposed through a Kubernetes NodePort Service
+- Configured with HTTP readiness and liveness probes
+- Verified through live API requests
+
+### Deployment Architecture
+
+```text
+Client
+  ↓
+Kubernetes NodePort :31142
+  ↓
+enterprise-ai-service :80
+  ↓
+Enterprise AI Gateway Pod :8000
+  ↓
+FastAPI Application
+```
+
+### Verified API Endpoints
+
+| Endpoint | Verification |
+|---|---|
+| `/health` | Healthy — HTTP 200 |
+| `/` | Gateway running — Week 20 |
+| `/providers` | OpenAI, Hugging Face, Local |
+| `/models` | GPT-4, Llama, Mistral |
+
+This milestone demonstrates practical experience across **LLM application engineering, Docker containerization, Kubernetes deployment, service networking, configuration management, secrets, and application health monitoring**.
+
+📁 Project: `projects/week20-enterprise-ai-gateway/`

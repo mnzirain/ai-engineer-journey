@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: enterprise-ai-config
+  namespace: enterprise-ai
+
+data:
+  APP_NAME: "Week 20 Enterprise AI Gateway"
+  ENVIRONMENT: "development"
+  LOG_LEVEL: "INFO"

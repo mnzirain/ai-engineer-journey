@@ -120,7 +120,13 @@ I believe that world-class engineers are distinguished not only by the technolog
 | Git | ✅ |
 | GitHub | ✅ |
 | CI/CD Fundamentals | ✅ |
-| Kubernetes | 🟡 Learning |
+| Kubernetes | ✅ |
+- Kubernetes Deployments
+- Kubernetes Services
+- ConfigMaps & Secrets
+- Readiness & Liveness Probes
+- NodePort Networking
+- Cloud-Native Workload Deployment
 | AWS Cloud | 🟡 Learning |
 | AI Infrastructure | ✅ Enterprise Portfolio |
 
@@ -163,8 +169,6 @@ I believe that world-class engineers are distinguished not only by the technolog
 
 ---
 
----
-
 # 🎓 Professional Certifications & Continuous Learning
 
 I believe that exceptional AI engineers continuously invest in expanding their technical expertise. Alongside building practical systems, I actively pursue industry-recognized certifications to strengthen both my theoretical understanding and production engineering skills.
@@ -181,7 +185,7 @@ I believe that exceptional AI engineers continuously invest in expanding their t
 
 - ✅ CompTIA Cloud Essentials
 - ✅ Docker Essentials
-- 🟡 Kubernetes (In Progress)
+- ✅ Kubernetes Fundamentals & Workload Deployment
 - 🟡 AWS Cloud Engineering (In Progress)
 
 ---
@@ -223,8 +227,6 @@ My approach is therefore based on:
 - Applying new knowledge immediately through practical implementation
 
 Rather than collecting certifications alone, I use every course and certification to improve the quality, scalability, and reliability of the systems I build.
-
----
 
 ---
 
@@ -301,7 +303,91 @@ Focus:
 
 Outcome:
 
-Transition from AI developer to Enterprise AI Platform Engineer.
+Transition from AI application development into Enterprise AI Platform and Infrastructure Engineering, with demonstrated experience in containerization, Kubernetes deployment, identity and access management, API gateway architecture, enterprise security, and production-oriented system design.
+
+### Infrastructure Capability — Now Demonstrated
+
+The portfolio has progressed beyond infrastructure theory into practical deployment.
+
+Week 20 demonstrates the ability to:
+
+- Build a FastAPI-based enterprise AI gateway
+- Containerize the application with Docker
+- Build and run the container locally
+- Deploy the workload to Kubernetes
+- Configure Kubernetes namespaces
+- Configure application settings through ConfigMaps
+- Manage sensitive configuration through Kubernetes Secrets
+- Expose workloads through Kubernetes Services and NodePort
+- Configure readiness and liveness probes
+- Verify Kubernetes workload health
+- Test the deployed API through the Kubernetes network path
+- Document the deployment architecture and verification evidence
+
+# ☸️ Week 20 Infrastructure Milestone
+
+## Enterprise AI Gateway → Kubernetes
+
+Week 20 marks an important transition in the AI Engineer Journey from enterprise AI application development into practical AI infrastructure engineering.
+
+The Enterprise AI Gateway was successfully:
+
+- Built as a Python 3.13 FastAPI application
+- Containerized with Docker
+- Deployed to a local Kubernetes cluster through Docker Desktop
+- Configured using Kubernetes ConfigMaps and Secrets
+- Exposed through a Kubernetes NodePort Service
+- Configured with HTTP readiness and liveness probes
+- Verified through live API requests
+
+### Deployment Architecture
+
+```text
+Client
+  ↓
+Kubernetes NodePort :31142
+  ↓
+enterprise-ai-service :80
+  ↓
+Enterprise AI Gateway Pod :8000
+  ↓
+FastAPI Application
+
+Verified API Endpoints
+
+| Endpoint     | Verification                |
+| ------------ | --------------------------- |
+| `/health`    | Healthy — HTTP 200          |
+| `/`          | Gateway running — Week 20   |
+| `/providers` | OpenAI, Hugging Face, Local |
+| `/models`    | GPT-4, Llama, Mistral       |
+
+Kubernetes Resources
+Namespace: enterprise-ai
+Deployment: enterprise-ai-gateway
+Service: enterprise-ai-service
+Service type: NodePort
+Application port: 8000
+Kubernetes service port: 80
+Local NodePort: 31142
+Configuration: Kubernetes ConfigMap
+Secrets: Kubernetes Secret
+Health checks: HTTP readiness and liveness probes
+Infrastructure Evidence
+
+The deployment was verified through:
+
+Kubernetes Deployment and Pod status
+Kubernetes Service and endpoint verification
+Container logs
+HTTP health checks
+Live API requests through the NodePort
+
+This milestone demonstrates practical experience across LLM application engineering, Docker containerization, Kubernetes workload deployment, service networking, configuration management, secrets management, and application health monitoring.
+
+It represents a transition from simply building AI applications to deploying and operating AI workloads as cloud-native services.
+
+📁 Project: projects/week20-enterprise-ai-gateway/
 
 ---
 
@@ -322,8 +408,6 @@ This mirrors how enterprise software evolves in real organizations:
 - Prepare for production.
 
 That philosophy is reflected throughout this repository.
-
----
 
 ---
 
@@ -399,8 +483,6 @@ Every project contains:
 - ✅ Screenshots and demonstrations
 - ✅ Enterprise folder organization
 - ✅ Testing where applicable
-
----
 
 ---
 
@@ -508,7 +590,7 @@ Designed with enterprise architecture principles including:
 ### Infrastructure
 
 - Docker
-- Kubernetes (Planned)
+- Kubernetes Workload Deployment
 - Cloud Deployment
 - Enterprise Identity Platform
 - Enterprise AI Gateway
@@ -537,8 +619,6 @@ The long-term objective is to provide intelligent clinical assistance that impro
 The enterprise engineering skills demonstrated throughout this repository are intentionally being applied toward the development of MedNavi AI.
 
 Every completed project contributes directly to the architecture, infrastructure, security, scalability, and production readiness of the platform.
-
----
 
 ---
 
@@ -674,8 +754,6 @@ My objective is not simply to become an AI engineer, but to grow into an enginee
 
 ---
 
----
-
 # 👤 Professional Background
 
 My professional journey combines over **27 years of multilingual communication expertise** with modern enterprise software engineering and Artificial Intelligence development.
@@ -790,8 +868,6 @@ My long-term vision is to help build intelligent systems that improve people's l
 
 ---
 
----
-
 # 🚀 Section 10 — Engineering Roadmap & Future Vision
 
 ## 🌍 Long-Term Vision
@@ -834,8 +910,11 @@ My learning roadmap is centered on mastering the technologies that power modern 
 
 ### Cloud & Infrastructure
 
-- Docker
-- Kubernetes
+- Docker & Containerization
+- Kubernetes Workload Deployment
+- Kubernetes Services & Networking
+- ConfigMaps & Secrets
+- Readiness & Liveness Probes
 - Cloud Deployment
 - CI/CD Pipelines
 - Observability & Monitoring
@@ -900,47 +979,5 @@ I hope this portfolio demonstrates not only what I have built, but also the engi
 ---
 
 > **"Learning AI by Building AI. Engineering AI for Real-World Impact."**
+
 ---
-
-# ☸️ Week 20 Infrastructure Milestone
-
-## Enterprise AI Gateway → Kubernetes
-
-Week 20 marks an important transition in the AI Engineer Journey from enterprise AI application development into practical AI infrastructure engineering.
-
-The Enterprise AI Gateway was successfully:
-
-- Built as a Python 3.13 FastAPI application
-- Containerized with Docker
-- Deployed to a local Kubernetes cluster through Docker Desktop
-- Configured using Kubernetes ConfigMaps and Secrets
-- Exposed through a Kubernetes NodePort Service
-- Configured with HTTP readiness and liveness probes
-- Verified through live API requests
-
-### Deployment Architecture
-
-```text
-Client
-  ↓
-Kubernetes NodePort :31142
-  ↓
-enterprise-ai-service :80
-  ↓
-Enterprise AI Gateway Pod :8000
-  ↓
-FastAPI Application
-```
-
-### Verified API Endpoints
-
-| Endpoint | Verification |
-|---|---|
-| `/health` | Healthy — HTTP 200 |
-| `/` | Gateway running — Week 20 |
-| `/providers` | OpenAI, Hugging Face, Local |
-| `/models` | GPT-4, Llama, Mistral |
-
-This milestone demonstrates practical experience across **LLM application engineering, Docker containerization, Kubernetes deployment, service networking, configuration management, secrets, and application health monitoring**.
-
-📁 Project: `projects/week20-enterprise-ai-gateway/`

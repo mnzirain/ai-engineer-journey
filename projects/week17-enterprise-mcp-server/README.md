@@ -22,7 +22,7 @@ The implementation uses **FastAPI** as the HTTP/API layer and separates core res
 - Protocol metadata
 - Automated API testing
 
-> **Scope clarification:** This project demonstrates an **MCP-style / MCP-inspired enterprise architecture**. It does not claim full compatibility with the official Model Context Protocol specification. The architecture documentation identifies real MCP protocol compatibility as a future enhancement.
+> **Scope clarification:** This project demonstrates an **MCP-style / MCP-inspired enterprise architecture**. It does not implement the official Model Context Protocol specification. Compatibility with that specification is identified as a future enhancement.
 
 ---
 
@@ -484,7 +484,7 @@ Cloud Deployment
    ▼
 Enterprise Observability
 
-These stages are future evolution, not claims that Week 17 is currently deployed on Docker, Kubernetes, or a cloud platform.
+These stages represent future evolution beyond the current local implementation.
 
 🔮 Future Evolution
 
@@ -583,63 +583,3 @@ AI Systems Engineer
 The strongest portfolio value of Week 17 is its demonstration of the infrastructure boundary between AI reasoning systems and enterprise tools.
 
 It shows an understanding that production AI systems require structured interfaces for discovering, invoking, and managing external capabilities.
-
-🩺 Relationship to MedNavi AI
-
-The architecture demonstrated in Week 17 provides a foundation for future AI platforms such as MedNavi AI.
-
-A healthcare AI platform can eventually require controlled access to capabilities such as:
-
-Clinical Knowledge Retrieval
-        │
-Multilingual Processing
-        │
-Medical Documentation
-        │
-Scheduling
-        │
-Pharmacy Communication
-        │
-Patient Workflow Services
-        │
-Clinical AI Assistants
-
-A protocol-driven tool layer can provide a structured mechanism through which these capabilities can eventually be exposed to AI systems.
-
-Week 17 therefore contributes to the broader architectural direction of building modular, secure, scalable, and enterprise-oriented AI infrastructure.
-
-🧭 Engineering Progression
-
-Week 17 establishes the protocol/tool infrastructure layer that later enterprise projects can build upon.
-
-Week 17
-MCP-Style Tool Infrastructure
-        │
-        ▼
-Week 18
-Authentication & Security
-        │
-        ▼
-Week 19
-Enterprise Identity & Access
-        │
-        ▼
-Week 20
-Enterprise AI Gateway
-
-This progression demonstrates increasing architectural depth from tool infrastructure toward secure identity, access control, and AI gateway infrastructure.
-
-👤 Author
-
-Mike Nzirainengwe
-
-Enterprise AI Infrastructure Engineer
-LLM Engineer
-AI Platform Architect
-
-Building secure, scalable, and production-oriented enterprise AI systems.
-
-GitHub Portfolio:
-https://github.com/mnzirain/ai-engineer-journey
-
-© 2026 Mike Nzirainengwe

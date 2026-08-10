@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Enterprise MCP Server provides a standardized protocol for Large Language Models (LLMs) to discover and invoke enterprise tools securely.
+The Enterprise MCP Server provides a structured protocol-style interface for Large Language Models (LLMs) to discover and invoke enterprise tools.
 
 Unlike traditional REST APIs that expose business logic directly, the MCP Server introduces a protocol layer responsible for:
 
@@ -37,7 +37,7 @@ Unlike traditional REST APIs that expose business logic directly, the MCP Server
      Search Tool  Summarizer  Translator
 ```
 
-Deployment Ready
+Future Deployment Architecture
 
 Containerization: Docker (Planned)
 Orchestration: Kubernetes (Planned)
@@ -104,7 +104,7 @@ Current tools:
 - API Keys
 - Async execution
 - Streaming responses
-- Real MCP protocol compatibility
+- Compatibility with the official Model Context Protocol specification
 - OpenTelemetry observability
 - Kubernetes deployment
 

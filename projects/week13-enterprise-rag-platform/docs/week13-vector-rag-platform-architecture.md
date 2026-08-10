@@ -1,6 +1,6 @@
-# Week 13 Enterprise RAG Architecture
+# Week 13 Enterprise RAG Retrieval & Context Architecture
 
-This project demonstrates an enterprise Retrieval-Augmented Generation (RAG) pipeline.
+This project demonstrates the retrieval and context-construction foundation of an enterprise Retrieval-Augmented Generation (RAG) architecture.
 
 ## Workflow
 
@@ -12,7 +12,7 @@ Document Loader
 
 ↓
 
-Smart Chunking
+Configurable Fixed-Size Chunking
 
 ↓
 
@@ -20,7 +20,7 @@ SentenceTransformer Embeddings
 
 ↓
 
-FAISS Vector Database
+FAISS Vector Index
 
 ↓
 
@@ -36,7 +36,7 @@ Context Builder
 
 ↓
 
-Enterprise RAG Pipeline
+Enterprise RAG Retrieval & Context Pipeline
 
 ↓
 

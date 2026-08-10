@@ -1,296 +1,645 @@
-# Week 17 – Enterprise Model Context Protocol (MCP) Server
+# Week 17 — Enterprise Model Context Protocol (MCP) Server
 
-![Python](https://img.shields.io/badge/Python-3.13-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-Enterprise-green)
-![MCP](https://img.shields.io/badge/Model_Context_Protocol-MCP-orange)
-![Architecture](https://img.shields.io/badge/Architecture-Enterprise-purple)
-![Testing](https://img.shields.io/badge/Pytest-Passing-success)
+> **Enterprise AI Infrastructure | MCP-Style Tool Infrastructure | Tool Discovery | Session & Context Management**
 
 ---
 
-# Enterprise AI Engineering Journey
+## 🏛️ Project Overview
 
-**Week 17** introduces an **Enterprise Model Context Protocol (MCP) Server**, demonstrating how modern AI platforms expose tools, services, and capabilities to Large Language Models (LLMs) using a standardized protocol.
+Week 17 introduces an **Enterprise Model Context Protocol (MCP) Server** designed to demonstrate how AI systems can discover and invoke enterprise capabilities through a structured, protocol-driven architecture.
 
-Unlike earlier weeks that focused on AI applications and orchestration, this project moves deeper into **AI Infrastructure Engineering**, simulating how production AI platforms communicate with enterprise tools.
+This project represents a transition from building AI applications toward building the **infrastructure layer that AI systems depend on**.
 
-This project represents a major transition from building AI applications to building the **infrastructure that powers AI systems**.
+The implementation uses **FastAPI** as the HTTP/API layer and separates core responsibilities into dedicated components for:
 
----
-
-# Project Objectives
-
-The Enterprise MCP Server demonstrates:
-
-- Enterprise AI communication protocols
+- MCP server orchestration
 - Tool discovery
-- Standardized tool metadata
-- Session-based request processing
+- Tool invocation
+- Session management
+- Context management
+- Structured request validation
+- Standardized responses
 - Protocol metadata
-- Enterprise API architecture
-- AI platform design patterns
-- Production-ready documentation
-- Automated testing
+- Automated API testing
+
+> **Scope clarification:** This project demonstrates an **MCP-style / MCP-inspired enterprise architecture**. It does not claim full compatibility with the official Model Context Protocol specification. The architecture documentation identifies real MCP protocol compatibility as a future enhancement.
 
 ---
 
-# Why Model Context Protocol (MCP)?
+# 🎯 Engineering Objective
 
-Modern LLM systems rarely work alone.
+The objective is to demonstrate the design of a modular infrastructure component positioned between an AI client or LLM and enterprise capabilities.
 
-Instead, they interact with:
+The architecture separates protocol handling from individual tool implementations:
 
-- Internal enterprise APIs
-- Search systems
-- Databases
-- ERP systems
-- CRM platforms
-- Medical systems
-- Financial systems
-- Security systems
+```text
+                 Client / LLM
+                      │
+                      ▼
+                FastAPI API Layer
+                      │
+                      ▼
+                MCP Server Engine
+                 │     │      │
+                 │     │      └── Tool Registry
+                 │     │             │
+                 │     │       ┌─────┼─────┐
+                 │     │       ▼     ▼     ▼
+                 │     │    Search Summarize Translate
+                 │     │
+                 │     └── Context Manager
+                 │
+                 └── Session Manager
 
-MCP provides a **standard protocol** allowing AI models to safely communicate with external capabilities.
+This separation establishes a foundation for enterprise AI systems in which AI reasoning and enterprise tool execution are treated as separate architectural concerns.
 
-This architecture is increasingly adopted across enterprise AI systems because it separates:
+🧩 Core Capabilities
+1. MCP Server Engine
 
-- AI reasoning
-- Tool execution
-- Security
-- Infrastructure
+The central MCPServer component coordinates:
 
----
+Session creation
+Context updates
+Tool discovery
+Tool invocation
+Standardized responses
+Protocol metadata
 
-# Architecture
+The implementation is located in:
 
-```
-                Client
-                   │
-                   ▼
-            FastAPI REST API
-                   │
-                   ▼
-             MCP Server Engine
-                   │
-        ┌──────────┼───────────┐
-        ▼          ▼           ▼
-    Search     Summarize   Translate
-       Tool        Tool         Tool
-```
+core/mcp_server.py
+2. Structured Request Contract
 
-The MCP Server receives requests from clients, identifies the requested enterprise tool, executes the tool, and returns standardized responses.
+The project defines a Pydantic-based MCPRequest model containing:
 
----
+session_id
+tool
+input
+metadata
 
-# Enterprise Components
+This establishes a structured request contract for MCP-style tool interactions.
 
-## MCP Server
+Source:
 
-Responsible for:
+core/mcp_request.py
+3. Standardized Response Contract
 
-- Managing sessions
-- Routing requests
-- Executing enterprise tools
-- Returning protocol-compliant responses
+Tool invocations return an MCPResponse model containing:
 
----
+session_id
+tool
+status
+output
+metadata
 
-## Tool Registry
+Responses also include protocol metadata:
 
-Maintains a catalogue of available enterprise tools.
-
-Example:
-
-- Search
-- Summarize
-- Translate
-
-The registry allows AI systems to discover capabilities dynamically.
-
----
-
-## Tool Metadata
-
-Every enterprise tool exposes metadata including:
-
-- Name
-- Description
-- Version
-- Input schema
-- Output schema
-
-This allows AI agents to understand available capabilities without hardcoding behaviour.
-
----
-
-## REST API
-
-The server exposes enterprise endpoints including:
-
-### Root
-
-```
-GET /
-```
-
-Platform information.
-
----
-
-### Health Check
-
-```
-GET /health
-```
-
-Platform availability.
-
----
-
-### Available Tools
-
-```
-GET /tools
-```
-
-Returns all registered enterprise tools.
-
----
-
-### Execute Tool
-
-```
-POST /mcp
-```
-
-Example:
-
-```json
 {
-  "tool": "search",
-  "payload": {
-    "query": "Enterprise RAG"
-  }
-}
-```
-
----
-
-# Example Response
-
-```json
-{
-  "session_id": "...",
-  "tool": "search",
-  "status": "success",
-  "output": {
-    "message": "Searching enterprise knowledge..."
-  },
   "metadata": {
     "protocol": "MCP",
     "version": "1.0"
   }
 }
-```
 
----
+Source:
 
-# Testing
+core/mcp_response.py
 
-Automated tests validate:
+This provides clients with a consistent response structure regardless of which registered tool was invoked.
 
-- Root endpoint
-- Health endpoint
-- Tool discovery
-- Search tool
-- Summarizer tool
-- Translator tool
-- Unknown tool handling
-- Session creation
-- Protocol metadata
+🔎 Tool Discovery
 
-Current status:
+The server exposes a dedicated tool-discovery endpoint:
 
-**9 Tests Passing**
+GET /mcp/tools
 
----
+The current tool registry contains:
 
-# Folder Structure
+search
+summarize
+translate
 
-```
+The registry is implemented separately from the MCP server engine:
+
+registry/tool_registry.py
+
+This separation makes the architecture extensible because additional enterprise capabilities can be registered without placing all tool definitions directly inside the API layer.
+
+⚙️ Tool Invocation
+
+Tools are invoked through:
+
+POST /mcp/invoke
+
+Example request:
+
+{
+  "tool": "search",
+  "input": {
+    "query": "Enterprise RAG"
+  }
+}
+
+The MCP server:
+
+Creates a session.
+Stores the last invoked tool in the session context.
+Identifies the requested tool.
+Executes the corresponding tool behaviour.
+Creates a standardized MCPResponse.
+Returns protocol metadata with the response.
+
+The implementation currently supports:
+
+Search
+
+Returns a structured message representing an enterprise knowledge search.
+
+Summarize
+
+Returns a structured message representing summarization of supplied text.
+
+Translate
+
+Returns a structured message representing translation of supplied text.
+
+Unknown Tools
+
+Unknown tool names are handled by the server and returned through the standardized response structure.
+
+🧠 Session Management
+
+The project includes a dedicated:
+
+core/session_manager.py
+
+The SessionManager generates unique session identifiers using UUIDs.
+
+Each invocation through the MCP server creates a session identifier that is returned in the standardized response.
+
+This establishes a foundation for associating requests with individual AI workflows or interactions.
+
+🧠 Context Management
+
+The project also includes:
+
+core/context_manager.py
+
+The ContextManager maintains session-scoped context.
+
+The current implementation stores key/value information against a generated session identifier.
+
+During tool invocation, the server records the most recently requested tool:
+
+session_id
+    │
+    └── last_tool
+
+This demonstrates the architectural separation between:
+
+API transport
+Session identity
+Workflow context
+
+The architecture can therefore evolve toward more sophisticated stateful AI workflows in later iterations.
+
+🌐 REST API
+
+The current FastAPI application exposes the following endpoints:
+
+| Method | Endpoint      | Purpose              |
+| ------ | ------------- | -------------------- |
+| `GET`  | `/`           | Platform information |
+| `GET`  | `/health`     | Service health       |
+| `GET`  | `/mcp/tools`  | Tool discovery       |
+| `POST` | `/mcp/invoke` | Tool invocation      |
+
+The API is implemented in:
+
+app.py
+
+FastAPI also provides the interactive Swagger/OpenAPI interface used as part of the project's evidence.
+
+🏗️ Architecture Components
+FastAPI API Layer
+
+Provides the HTTP interface through which clients interact with the Enterprise MCP Server.
+
+MCP Server Engine
+
+Coordinates sessions, context, tool discovery, tool invocation, and standardized responses.
+
+Session Manager
+
+Generates unique UUID-based session identifiers.
+
+Context Manager
+
+Maintains session-scoped contextual information.
+
+Tool Registry
+
+Maintains the catalogue of available enterprise tools.
+
+Current registered capabilities:
+
+Search
+Summarize
+Translate
+Request / Response Models
+
+Pydantic models define structured MCP-style request and response contracts.
+
+📐 Architecture Documentation
+
+Detailed architecture documentation is maintained separately from the application README.
+
+Architecture Documentation
+
+docs/architecture.md
+
+Architecture Diagram
+
+docs/architecture.png
+
+Editable Draw.io Architecture Source
+
+docs/architecture.drawio
+
+The architecture documentation describes the relationship between:
+
+FastAPI
+   │
+   ▼
+MCP Server
+   │
+   ├── Session Manager
+   │
+   ├── Context Manager
+   │
+   └── Tool Registry
+            │
+            ├── Search
+            ├── Summarize
+            └── Translate
+🧪 Automated Testing
+
+The project contains automated tests using:
+
+pytest
+FastAPI TestClient
+
+The test suite validates the core server functionality.
+
+Tested Areas
+Root endpoint
+Health endpoint
+Tool discovery
+Search tool
+Summarize tool
+Translate tool
+Unknown tool handling
+Session creation
+Protocol metadata
+Test Files
+tests/
+├── test_health.py
+├── test_mcp_server.py
+└── test_tools.py
+Verified Result
+
+9 tests passing
+
+The test suite provides automated evidence that the implemented API and MCP-style server behaviours operate as expected.
+
+📸 Evidence & Demonstrations
+
+The repository contains visual evidence covering the implemented API and server functionality.
+
+API & Platform
+Home Endpoint
+
+screenshots/01-home-endpoint.png
+
+Health Endpoint
+
+screenshots/02-health-endpoint.png
+
+MCP Tool Discovery
+
+screenshots/03-mcp-tools.png
+
+MCP Search Tool
+
+screenshots/04-mcp-search-tool.png
+
+MCP Summarize Tool
+
+screenshots/05-mcp-summarize-tool.png
+
+MCP Translate Tool
+
+screenshots/06-mcp-translate-tool.png
+
+Swagger / OpenAPI Overview
+
+screenshots/07-swagger-overview.png
+
+Tests Passing
+
+screenshots/08-tests-passing.png
+
+These screenshots provide portfolio evidence for the implemented API, tool discovery, tool invocation, Swagger interface, and automated testing.
+
+📁 Project Structure
 week17-enterprise-mcp-server/
 │
-├── app.py
-├── auth/
+├── api/
+│   └── __init__.py
+│
+├── config/
+│   └── __init__.py
+│
 ├── core/
+│   ├── __init__.py
+│   ├── context_manager.py
+│   ├── mcp_request.py
+│   ├── mcp_response.py
+│   ├── mcp_server.py
+│   └── session_manager.py
+│
 ├── registry/
-├── models/
+│   ├── __init__.py
+│   ├── prompt_registry.py
+│   ├── resource_registry.py
+│   └── tool_registry.py
+│
+├── services/
+│   └── __init__.py
+│
+├── tools/
+│   └── __init__.py
+│
 ├── tests/
+│   ├── __init__.py
+│   ├── test_health.py
+│   ├── test_mcp_server.py
+│   └── test_tools.py
+│
 ├── docs/
+│   ├── architecture.drawio
+│   ├── architecture.md
+│   └── architecture.png
+│
 ├── screenshots/
+│   ├── 01-home-endpoint.png
+│   ├── 02-health-endpoint.png
+│   ├── 03-mcp-tools.png
+│   ├── 04-mcp-search-tool.png
+│   ├── 05-mcp-summarize-tool.png
+│   ├── 06-mcp-translate-tool.png
+│   ├── 07-swagger-overview.png
+│   └── 08-tests-passing.png
+│
+├── app.py
+├── requirements.txt
+├── requirements-dev.txt
 └── README.md
-```
 
----
+🛠️ Technology Stack
+Backend
+Python
+FastAPI
+Pydantic
+REST API
+Uvicorn
+AI Infrastructure
+MCP-style protocol architecture
+Tool discovery
+Tool registry
+Tool invocation
+Session management
+Context management
+Structured request/response contracts
+Protocol metadata
+Testing
+Pytest
+FastAPI TestClient
+Documentation
+Markdown
+Draw.io
+Architecture documentation
+Swagger/OpenAPI
+🔐 Enterprise Design Principles
+Modular Architecture
 
-# Screenshots
+Responsibilities are separated into dedicated modules instead of being concentrated in a single application file.
 
-Included:
+Single Responsibility
 
-- Swagger API
-- Tool Discovery
-- MCP Execution
-- Architecture Diagram
-- Test Results
+Session management, context management, tool registration, request/response contracts, and MCP orchestration have dedicated components.
 
----
+Protocol-Driven Design
 
-# Enterprise Skills Demonstrated
+AI capabilities are exposed through a structured protocol-style interface rather than requiring clients to understand individual tool implementations.
 
-- FastAPI
-- REST API Design
-- Enterprise AI Infrastructure
-- MCP Protocol
-- Tool Discovery
-- Modular Architecture
-- Session Management
-- Protocol Design
-- Automated Testing
-- Software Documentation
+Extensible Tool Registry
 
----
+The registry provides a central mechanism for discovering available enterprise capabilities.
 
-# Portfolio Relevance
+Standardized Responses
 
-This project demonstrates skills directly applicable to roles such as:
+Tool execution returns a consistent response containing:
 
-- AI Infrastructure Engineer
-- LLM Engineer
-- AI Platform Engineer
-- Backend AI Engineer
-- Enterprise AI Solutions Engineer
+Session information
+Tool name
+Status
+Output
+Protocol metadata
+Separation of AI Reasoning and Tool Execution
 
----
+The architecture establishes a clear boundary between the AI client or LLM and the enterprise capabilities that it can invoke.
 
-# Next Evolution
+🚀 Deployment Roadmap
 
-Week 18 expands this architecture by introducing:
+The architecture documentation identifies deployment and infrastructure expansion as future stages.
 
-- Enterprise Authentication
-- API Keys
-- Role-Based Access Control (RBAC)
-- Security Middleware
+Current
+   │
+   ▼
+FastAPI MCP-Style Server
+   │
+   ▼
+Docker Containerization
+   │
+   ▼
+Kubernetes
+   │
+   ▼
+CI/CD
+   │
+   ▼
+Cloud Deployment
+   │
+   ▼
+Enterprise Observability
 
-Together, Weeks 17 and 18 form the foundation of a production-grade enterprise AI platform.
+These stages are future evolution, not claims that Week 17 is currently deployed on Docker, Kubernetes, or a cloud platform.
 
----
+🔮 Future Evolution
 
-## Author
+The architecture documentation identifies several future enhancements:
 
-**Mike Nzirainengwe**
+Authentication
+RBAC
+API keys
+Async execution
+Streaming responses
+Full official MCP protocol compatibility
+OpenTelemetry observability
+Kubernetes deployment
+Cloud deployment
+CI/CD automation
 
-AI Engineering Journey
+These enhancements represent the natural evolution from an MCP-style enterprise tool server toward a more complete AI infrastructure platform.
 
-Building production-ready AI systems, enterprise infrastructure, and Generative AI platforms one week at a time.
+🔗 Position in the AI Engineering Journey
+
+Week 17 represents an important architectural transition in the portfolio.
+
+The progression is:
+
+AI Applications
+      ↓
+LLM Systems
+      ↓
+RAG & Agentic Systems
+      ↓
+AI Platforms
+      ↓
+AI Infrastructure
+      ↓
+MCP & Tool Infrastructure
+
+Instead of focusing only on what an AI application can do, this milestone focuses on how AI systems communicate with and invoke external capabilities.
+
+📈 Evolution into Week 18
+
+Week 18 builds on the infrastructure foundation established here by introducing enterprise authentication and security capabilities.
+
+Week 17
+Enterprise MCP-Style Tool Infrastructure
+          │
+          ▼
+Week 18
+Enterprise Authentication & Security
+
+This progression moves the portfolio toward increasingly complete enterprise AI infrastructure involving authentication, identity, authorization, gateways, and cloud-native systems.
+
+🎯 Skills Demonstrated
+AI Infrastructure Engineering
+MCP-style architecture
+Tool discovery
+Tool invocation
+Protocol-driven infrastructure
+Enterprise tool registries
+Backend Engineering
+Python
+FastAPI
+REST API design
+Pydantic
+Modular backend architecture
+Uvicorn
+Enterprise Architecture
+Session management
+Context management
+Protocol metadata
+Component separation
+Extensible architecture
+Standardized responses
+Quality Engineering
+Automated API testing
+FastAPI TestClient
+Endpoint verification
+Tool behaviour validation
+Session validation
+Protocol metadata validation
+Technical Documentation
+Architecture documentation
+Draw.io system diagrams
+Swagger/OpenAPI documentation
+Evidence-based portfolio documentation
+💼 Portfolio Relevance
+
+This project demonstrates practical capabilities relevant to roles such as:
+
+LLM Engineer
+AI Infrastructure Engineer
+AI Platform Engineer
+AI Backend Engineer
+Enterprise AI Engineer
+AI Systems Engineer
+
+The strongest portfolio value of Week 17 is its demonstration of the infrastructure boundary between AI reasoning systems and enterprise tools.
+
+It shows an understanding that production AI systems require structured interfaces for discovering, invoking, and managing external capabilities.
+
+🩺 Relationship to MedNavi AI
+
+The architecture demonstrated in Week 17 provides a foundation for future AI platforms such as MedNavi AI.
+
+A healthcare AI platform can eventually require controlled access to capabilities such as:
+
+Clinical Knowledge Retrieval
+        │
+Multilingual Processing
+        │
+Medical Documentation
+        │
+Scheduling
+        │
+Pharmacy Communication
+        │
+Patient Workflow Services
+        │
+Clinical AI Assistants
+
+A protocol-driven tool layer can provide a structured mechanism through which these capabilities can eventually be exposed to AI systems.
+
+Week 17 therefore contributes to the broader architectural direction of building modular, secure, scalable, and enterprise-oriented AI infrastructure.
+
+🧭 Engineering Progression
+
+Week 17 establishes the protocol/tool infrastructure layer that later enterprise projects can build upon.
+
+Week 17
+MCP-Style Tool Infrastructure
+        │
+        ▼
+Week 18
+Authentication & Security
+        │
+        ▼
+Week 19
+Enterprise Identity & Access
+        │
+        ▼
+Week 20
+Enterprise AI Gateway
+
+This progression demonstrates increasing architectural depth from tool infrastructure toward secure identity, access control, and AI gateway infrastructure.
+
+👤 Author
+
+Mike Nzirainengwe
+
+Enterprise AI Infrastructure Engineer
+LLM Engineer
+AI Platform Architect
+
+Building secure, scalable, and production-oriented enterprise AI systems.
 
 GitHub Portfolio:
 https://github.com/mnzirain/ai-engineer-journey
+
+© 2026 Mike Nzirainengwe

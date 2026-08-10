@@ -671,7 +671,6 @@ MedNavi AI remains under private development.
 The public repository intentionally documents the **engineering journey and transferable technical capabilities**, rather than the proprietary product implementation.
 
 # 🧭 Section 10 — Portfolio Navigation
-# 🧭 Section 10 — Portfolio Navigation
 
 This repository is organized to make the engineering progression easy to explore.
 

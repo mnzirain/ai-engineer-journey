@@ -607,153 +607,70 @@ This systems-level approach is central to my progression toward **LLM Engineerin
 
 # 🩺 Section 9 — MedNavi AI: Flagship Mission
 
-> **Simple. Lovable. Complete.**
+## 🚀 MedNavi AI
 
-**MedNavi AI** is the flagship platform I am developing to apply the engineering capabilities demonstrated throughout this portfolio to a real-world healthcare problem.
+**MedNavi AI** is my flagship real-world AI initiative through which I intend to apply the engineering capabilities developed throughout this portfolio to a meaningful healthcare problem in Southern Africa.
 
-The mission is to build a **secure, multilingual, AI-powered healthcare intelligence platform** designed initially for healthcare professionals and organisations across Southern Africa.
+The initiative combines:
 
-Rather than being another standalone chatbot, MedNavi AI is being designed as a platform capable of supporting multiple healthcare workflows through secure APIs, AI orchestration, RAG, multilingual AI, and cloud-native architecture.
+- AI engineering
+- LLM technologies
+- Multilingual AI
+- Secure software engineering
+- Intelligent systems
+- AI infrastructure
+- Cloud-native architecture
+- Responsible AI principles
 
-## 🎯 The Problem
+The purpose of this portfolio is to demonstrate the **engineering capabilities and reusable infrastructure principles** required to build serious AI platforms.
 
-Healthcare professionals spend significant time on administrative and documentation tasks.
+The detailed MedNavi product workflows, proprietary business logic, commercial strategy, competitive differentiators, internal implementation details, and domain-specific system design are intentionally kept outside this public portfolio repository.
 
-MedNavi AI is being developed around a simple principle:
+This separation allows the portfolio to demonstrate engineering competence while protecting the intellectual property and commercial potential of the flagship initiative.
 
-> **Use AI to reduce unnecessary administrative burden while keeping healthcare professionals in control of clinical decisions.**
+## 🏗️ Engineering Foundation
 
-## 🧠 Core Capabilities
+The 20-project engineering journey progressively develops capabilities relevant to the long-term MedNavi mission:
 
-### 🩺 AI Medical Scribe
+**LLM Applications**
 
-- Voice-to-text processing
-- Structured SOAP notes
-- Consultation summaries
-- Clinical documentation assistance
-- Referral and follow-up documentation
+→ **RAG & Knowledge Systems**
 
-### 🔎 Healthcare RAG
+→ **AI Agents**
 
-- Document ingestion
-- Embeddings
-- Vector search
-- Retrieval-Augmented Generation
-- Source-grounded responses
-- Knowledge-base management
+→ **Multi-Agent Systems**
 
-### 🌍 Multilingual Healthcare AI
+→ **AI Orchestration**
 
-The platform is being designed to support multilingual healthcare workflows across Southern Africa.
+→ **Tool Calling**
 
-Target languages include:
+→ **MCP**
 
-- English
-- Shona
-- isiZulu
-- isiXhosa
-- Sesotho
-- Northern Ndebele
+→ **Authentication & Security**
 
-This direction builds on my long-term experience in African-language translation and interpretation and my continuing interest in African-language AI systems and datasets.
+→ **Identity & Access**
 
-### 📋 Digital Clinical Workflows
+→ **AI Gateways**
 
-Longer-term capabilities include:
+→ **Enterprise AI Infrastructure**
 
-- Digital patient intake
-- Clinical documentation
-- Referral workflows
-- Follow-up communication
-- Pharmacy communication
-- Ward transfer documentation
-- Healthcare administration automation
+The objective is to continue developing these capabilities into systems that can eventually be **deployed, secured, monitored, scaled, and operated in real-world environments**.
 
-## 🏗️ Architecture Direction
+## 🔐 Responsible AI
 
-**Healthcare Professional**
+MedNavi AI is intended to support professionals and organisations rather than replace appropriate human judgment.
 
-↓
-
-**Secure Application Interface**
-
-↓
-
-**Authentication & Authorization**
-
-↓
-
-**Enterprise AI Gateway**
-
-↓
-
-**AI Orchestration Layer**
-
-↓
-
-**LLM / Agent Services**
-
-↓
-
-**RAG & Knowledge Services**
-
-↓
-
-**PostgreSQL / Redis / Vector Storage**
-
-↓
-
-**Containerized Services**
-
-↓
-
-**Cloud-Native Infrastructure**
-
-This architecture is intended to allow individual capabilities to evolve into maintainable platform services rather than becoming one tightly coupled application.
-
-## 🔐 Security & Responsible AI
-
-Healthcare AI requires a higher standard of engineering discipline.
-
-MedNavi AI is therefore being developed with principles including:
-
-- Secure authentication
-- Role-based access control
-- API security
-- Data protection
-- Auditability
-- Controlled access to AI services
-- Human oversight
-- Source-grounded retrieval
-- Responsible AI decision support
-
-> **MedNavi AI is intended to assist healthcare professionals, not replace clinical judgment.**
-
-Clinical decision-support capabilities will require appropriate validation, governance, human oversight, privacy controls, and regulatory consideration before real-world clinical deployment.
-
-## 🚀 Long-Term Vision
-
-The long-term objective is to develop MedNavi AI into a scalable healthcare intelligence platform serving:
-
-- Private medical practices
-- Clinics
-- Hospitals
-- Medical specialists
-- Healthcare groups
-- Medical training institutions
-
-The broader vision is to make advanced AI capabilities more accessible to healthcare professionals across Southern Africa while developing the secure infrastructure required to support multilingual healthcare AI.
+Any future domain-specific healthcare capabilities will therefore require appropriate validation, governance, privacy protection, security controls, human oversight, and regulatory consideration before real-world deployment.
 
 ## 📍 Current Status
 
-**Active Development — Flagship Project**
+**Active Development — Flagship Initiative**
 
-The 20-project engineering journey provides the technical foundation from which MedNavi AI will continue to evolve.
+MedNavi AI remains under private development.
 
-The next stage is focused on turning that foundation into a more coherent, deployable, observable, secure, and production-oriented healthcare AI platform.
+The public repository intentionally documents the **engineering journey and transferable technical capabilities**, rather than the proprietary product implementation.
 
----
-
+# 🧭 Section 10 — Portfolio Navigation
 # 🧭 Section 10 — Portfolio Navigation
 
 This repository is organized to make the engineering progression easy to explore.

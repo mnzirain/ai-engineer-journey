@@ -10,7 +10,7 @@
 
 # 1. Overview
 
-The Enterprise AI Gateway is a centralized access layer responsible for securely routing AI requests from client applications to multiple AI providers while enforcing authentication, authorization, rate limiting, monitoring, and request governance.
+The Enterprise AI Gateway is a centralized access layer responsible for routing AI requests from client applications to multiple AI providers while applying authentication, authorization, rate limiting, monitoring, and request-governance controls.
 
 Rather than allowing applications to communicate directly with individual AI providers, the gateway provides a unified interface between client applications and AI infrastructure.
 
@@ -51,7 +51,7 @@ The architecture was designed to achieve the following goals:
 - Separate sensitive configuration from normal application configuration.
 - Provide application health monitoring through Kubernetes probes.
 - Establish a foundation for future cloud deployment.
-- Provide a reusable infrastructure foundation for MedNavi AI.
+- Provide a reusable infrastructure foundation for future domain-specific AI applications.
 
 ---
 
@@ -73,7 +73,7 @@ The architecture was designed to achieve the following goals:
                Gateway Processing Engine
                         │
                         ▼
-                 Intelligent Router
+                 Model Router
         ┌────────────┬────────────┬────────────┐
         ▼            ▼            ▼
      OpenAI      Hugging Face    Local AI
@@ -175,9 +175,9 @@ Metrics collection
 
 The engine separates business logic from the API transport layer.
 
-4.7 Intelligent Router
+4.7 Model Router
 
-The router determines which AI provider should process a request.
+The model router determines which AI provider should process a request.
 
 Current provider registry:
 
@@ -202,7 +202,7 @@ The gateway provides a common abstraction over multiple AI providers.
 
                     Enterprise AI Gateway
                             │
-                     Intelligent Router
+                     Model Router
                             │
           ┌─────────────────┼─────────────────┐
           ▼                 ▼                 ▼
@@ -229,7 +229,7 @@ FastAPI validates the request structure.
 Authentication middleware validates the API key.
 Rate limiter checks request usage.
 Gateway Engine processes the request.
-Intelligent Router selects the appropriate AI provider.
+Model Router selects the appropriate AI provider.
 Selected provider processes the request.
 Gateway standardizes the response.
 Metrics are updated.
@@ -515,33 +515,24 @@ Potential target platforms include:
 Amazon EKS
 Azure Kubernetes Service (AKS)
 Google Kubernetes Engine (GKE)
-22. Relationship to MedNavi AI
+22. Relationship to Future AI Applications
 
-The Enterprise AI Gateway represents a foundational infrastructure component for the long-term MedNavi AI vision.
+The Enterprise AI Gateway demonstrates a reusable infrastructure pattern for future domain-specific AI applications.
 
-Future MedNavi services could communicate through a centralized AI gateway rather than integrating independently with individual AI providers.
+Future AI services could communicate through a centralized gateway rather than integrating independently with individual AI providers.
 
-Potential services include:
-
-SOAP note generation
-Multilingual clinical documentation
-Retrieval-Augmented Generation
-Intelligent clinical assistants
-Scheduling
-Patient intake
-Symptom triage
-Pharmacy communication
-Ward transfer documentation
-
-A gateway architecture can provide MedNavi AI with:
+A gateway architecture can provide:
 
 Centralized AI provider management
-Improved security
+Authentication and access control
 Provider independence
 Consistent API contracts
 Centralized monitoring
-Easier scaling
+Rate limiting
+Infrastructure governance
 Easier infrastructure evolution
+
+Specific commercial products, domain workflows, and proprietary business logic are intentionally outside the scope of this portfolio implementation.
 23. Skills Demonstrated
 Enterprise AI Engineering
 Enterprise AI Gateway Architecture
@@ -674,7 +665,7 @@ While the current Kubernetes deployment is local and intentionally simplified, i
 
 This milestone forms an important bridge between LLM application engineering, AI platform engineering, and AI infrastructure engineering.
 
-It also provides an architectural foundation that can be extended toward cloud-native AI platforms and, ultimately, the infrastructure vision behind MedNavi AI.
+It also provides an architectural foundation that can be extended toward broader cloud-native AI platforms and infrastructure systems.
 
 Designed & Implemented by
 
@@ -696,6 +687,6 @@ Enterprise AI Architect
 ↓
 AI Technology Leader / Founder
 
-MedNavi AI — Intelligent Healthcare Platform for Southern Africa
+Enterprise AI Infrastructure and Platform Architecture
 
 © 2026 Mike Nzirainengwe | AI Engineer Journey | Week 20

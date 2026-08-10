@@ -1,6 +1,6 @@
 # Week 20 — Enterprise AI Gateway
 
-> **A production-inspired, cloud-native AI gateway for secure multi-provider LLM access**
+> **A production-inspired, cloud-native AI gateway for governed multi-provider LLM access**
 
 [![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-API%20Platform-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -13,7 +13,7 @@
 
 # 1. Project Overview
 
-Week 20 represents a major transition in the **AI Engineer Journey** from building individual AI applications toward designing the infrastructure layer through which enterprise AI applications can securely access multiple AI providers.
+Week 20 represents a major transition in the **AI Engineer Journey** from building individual AI applications toward designing the infrastructure layer through which enterprise AI applications can access multiple AI providers through a governed interface.
 
 The project implements an **Enterprise AI Gateway** that provides a unified interface between client applications and multiple AI providers.
 
@@ -552,25 +552,13 @@ Enterprise AI Gateway + Kubernetes
 
 Week 20 therefore acts as an infrastructure-oriented integration milestone.
 
-The gateway provides a platform boundary through which future AI applications can consume models securely and consistently.
+The gateway provides a platform boundary through which future AI applications can consume models through a consistent and governed interface.
 
-18. Relationship to MedNavi AI
+18. Relationship to Future AI Applications
 
-The architecture developed in Week 20 directly supports the long-term MedNavi AI mission.
+The architecture developed in Week 20 is designed as a reusable infrastructure foundation for future domain-specific AI applications.
 
-MedNavi AI is being developed as a multilingual healthcare AI platform for Southern Africa.
-
-Future MedNavi capabilities can be positioned behind a centralized AI gateway rather than integrating independently with multiple AI providers.
-
-Potential services include:
-
-Multilingual transcription
-SOAP note generation
-Retrieval-Augmented Generation
-Intelligent triage
-Appointment workflows
-Pharmacy communication
-Clinical AI assistants
+Future AI services can be positioned behind a centralized gateway rather than integrating independently with multiple AI providers.
 
 The gateway architecture provides a foundation for:
 
@@ -581,6 +569,8 @@ Rate limiting
 Monitoring
 Standardized interfaces
 Cloud-native deployment
+
+Domain-specific product workflows and commercial business logic are intentionally outside the scope of this portfolio implementation.
 19. Engineering Skills Demonstrated
 AI Engineering
 Large Language Model integration
@@ -707,12 +697,12 @@ Mike Nzirainengwe
 
 AI Engineer | LLM Engineer | AI Platform Engineering
 
-Building secure, scalable, production-inspired AI systems and infrastructure.
+Building resilient, scalable, production-inspired AI systems and infrastructure.
 
 Long-Term Mission
 
 Build world-class AI infrastructure and intelligent platforms that create practical impact across Africa and beyond.
 
-Flagship Mission: MedNavi AI — Intelligent Healthcare Platform for Southern Africa
+Long-Term Engineering Mission: Enterprise AI Infrastructure and AI Platform Architecture
 
 © 2026 Mike Nzirainengwe
